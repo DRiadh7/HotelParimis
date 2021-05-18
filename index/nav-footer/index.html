@@ -5,18 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.min.css">
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
     <!-- =============== 
     Section Navbar
     ===============-->
-    <h1>test</h1>
-    <h2>Test2</h2>
-    <h2>Test3</h2>
+    <header>
+        <div class="logo">
+            <a href="#">
+                <h1>HOTEL PARIMIS</h1>
+                <h2>PARIS</h2>
+            </a>
+        </div>
+        <ul class="lienNav">
+            <li><a href="#">CHAMBRES</a></li>
+            <li><a href="#">RESTAURANT</a></li>
+            <li><a href="#">SPA & FITNESS</a></li>
+            <li><a href="#">ACTUALITÉS</a></li>
+            <li><a href="#">ÉVÉNEMENTS</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">RÉSERVATION</a></li>
+        </ul>
+        <div class="autreNav">
+            <div class="lang">
+                <span><a href="#">FR</a></span>
+                <span>|</span>
+                <span><a href="#">EN</a></span>
+            </div>
+            <div class="panier">
+                <a href="#">MON PANIER <i class="fas fa-store-alt"></i></a>
+            </div>
+            <div class="recherche">
+                <input type="text" placeholder="Recherche">
+            </div>
     
+        </div>
+
+        <!-- MENU HUMBERGER -->
+        <i class="fas fa-bars" id="openMenu"></i>
+       
+    </header>
+    <!-- DROP MENU -->
+    <section id="menuBurger">
+         <div class="dropMenu">
+            <i class="far fa-times-circle" id="closeMenu"></i>
+
+            <ul class="itemDropMenu">
+                <li><a href="#">CHAMBRES</a></li>
+                <li><a href="#">RESTAURANT</a></li>
+                <li><a href="#">SPA & FITNESS</a></li>
+                <li><a href="#">ACTUALITÉS</a></li>
+                <li><a href="#">ÉVÉNEMENTS</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">RÉSERVATION</a></li>
+            </ul> 
+        </div>
+    </section>
     <!-- =============== 
     Section Footer
     ===============-->
+
+    <script src="/index/nav-footer/menu.js"></script>
 </body>
 </html>
