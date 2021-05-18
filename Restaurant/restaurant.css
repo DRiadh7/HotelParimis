@@ -1,0 +1,160 @@
+/*
+=============== 
+Fonts
+===============
+*/
+h1, h2, p{
+
+    font-family: 'Abhaya Libre', serif; /*typo police choisie pour l'ensemble du site*/
+    
+    }
+
+    h1 {
+
+    font-size: calc(3rem + 0.7vw); /*taille des titres h1*/
+    }
+
+    h2{
+
+    font-size: calc(1rem + 0.7vw); /*taille des titres h2*/
+    
+    }
+
+
+
+
+
+
+
+
+/*
+=============== 
+Variables
+===============
+*/
+/*  color: var(--clr-primary); */
+:root {
+    --clr-white: #ffffff;
+}
+/*
+=============== 
+Global css
+===============
+*/
+body{
+    line-height: 1.5em;
+    letter-spacing: 1px;
+    margin: 117px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+
+a{
+text-decoration: none; /*retire l'effet soulignement des liens*/
+color: inherit; /*retire la couleur bleue des liens*/
+margin-bottom: 50px;
+}
+
+img{
+    max-width: 200px;
+    height: 200px;
+    padding-bottom: 10px;
+
+}
+
+.imgsep{
+
+width: 50%;
+height: 10%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+p{
+    text-align: justify;
+    margin: 10 10 10 10;
+}
+
+
+
+h1{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-style: bold;
+}
+
+h2{
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+
+
+li{
+    display: list-item;
+    text-align: center;
+}
+
+#4 {
+    display: flex;
+    text-align: right;
+    padding-right: 10px;
+}
+
+
+aside{
+
+    width: 40%;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #29627e;
+
+}
+
+
+/*
+=============== 
+Animation
+===============
+*/
+
+/*
+=============== 
+Section ...
+===============
+*/
+
+.carrouselAuto{
+    
+    display: block;
+    max-width: 500px;
+    margin: 15px auto 15px auto;
+}
+
+
+
+.container1{
+    display: flex;
+    margin-top: 50px; /*pour gérer l'espace entre les sections*/
+}
+
+.pmenu{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 5%;
+}
+
+
+
+
+
