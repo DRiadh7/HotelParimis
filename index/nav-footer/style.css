@@ -4,6 +4,8 @@ Fonts
 ===============
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Pattaya&display=swap');
+
 /*
 =============== 
 Variables
@@ -12,21 +14,209 @@ Variables
 /*  color: var(--clr-primary); */
 :root {
     --clr-white: #ffffff;
+    --clr-black: #000000;
+    --clr-grey: #e7e7e7;
+    --clr-dropMenu: #030303;
 }
 /*
 =============== 
 Global css
 ===============
 */
-
+a{
+    font-family: 'Abhaya Libre', serif;
+    text-decoration: none;
+    color: var(--clr-black);
+}
 /*
 =============== 
 Animation
 ===============
 */
-
+@keyframes morph {
+    from {
+        border-radius: 50% 50% 44% 56% / 0% 50% 50% 100%;
+    }
+    25% {
+        border-radius: 48% 52% 67% 33% / 38% 40% 60% 62%  ;
+    }
+    50% {
+       border-radius: 38% 62% 35% 65% / 72% 33% 67% 28%  ;
+    }
+    75% {
+        border-radius: 25% 75% 55% 45% / 56% 45% 55% 44% ;
+    }
+    to {
+        border-radius: 50% 50% 44% 56% / 0% 50% 50% 100% ;
+    }
+}
 /*
 =============== 
-Section ...
+Section Navbar
 ===============
 */
+
+header {
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-weight: bold;
+    font-size: calc(0.2rem + 1vw);
+    border-radius: 50% 50% 44% 56% / 0% 50% 50% 100%;
+    /* background: linear-gradient(to right, #24242357, rgba(175, 145, 9, 0.185), rgba(175, 145, 9, 0.185)); */
+    background-color: #c54f7c46;
+    animation: morph 7s linear infinite alternate;
+}
+.logo h2 {
+    text-align: center;
+    margin-top: 0.5rem;
+}
+.lienNav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.lienNav li {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    font-weight: bold;
+    font-size: calc(0.2rem + 1vw);
+}
+.autreNav {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 0.5rem;
+}
+.lang, .panier{
+    margin: 0.15rem;
+    margin-right: 0.4rem;
+    font-size: calc(0.1rem + 0.9vw);
+}
+.panier i {
+    margin-left: 0.5rem;
+}
+.recherche input{
+    width: 6rem;
+    margin: 0.4rem;
+    padding: 0.3rem;
+    background-color: var(--clr-grey);
+    border: none;
+    font-size: calc(0.1rem + 0.9vw);
+}
+
+/* MENU HUMBERGER */
+#menuBurger {
+    display: none;
+}
+#openMenu {
+    position: absolute;
+    top: 30%;
+    right: 2%;
+    font-size: 2rem;
+    display: none;
+}
+/* DROP MENU */
+.dropMenu {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--clr-dropMenu);
+    top: 0;
+    z-index: 5;
+}
+#closeMenu {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    color: rgb(206, 121, 121);
+    z-index: 2;
+    font-size: 2rem;
+}
+.itemDropMenu {
+    z-index: 3;
+    position: absolute;
+    top: 40%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+.itemDropMenu li {
+    margin: 0.7rem;
+}
+.itemDropMenu a {
+    color: var(--clr-white);
+    font-size: 1.5rem;
+}
+/*
+=============== 
+Section Footer
+===============
+*/
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+    background: rgb(167, 167, 167);
+}
+.lienFooter {
+    margin: 1rem 0;
+}
+.itemLienFooter {
+    display: flex;
+}
+.itemLienFooter li {
+    margin: 0 0.5rem;
+    font-size: calc(0.4rem + 0.7vw);
+    font-weight: bold;
+}
+.logoPartageFooter {
+    margin-bottom: 0.5rem;
+    font-size: calc(1rem + 0.7vw);
+}
+.footer p {
+    margin-bottom: 1rem;
+    font-size: calc(0.4rem + 0.7vw);
+}
+.legal a {
+    margin: 0 0.5rem;
+}
+/*
+=============== 
+Section Média 
+===============
+*/
+
+@media screen and (max-width : 768px){
+    .logo{
+        font-size: 1rem;
+    }
+    .lienNav{
+        display: none;
+    }
+    .autreNav {
+        display: none;
+    }
+    #openMenu {
+        display: block;
+    } 
+}
+
+
+
+
+
+
+

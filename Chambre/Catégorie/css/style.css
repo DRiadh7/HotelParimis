@@ -1,0 +1,171 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap');
+
+/*
+=============== 
+Variables
+===============
+*/
+/*  color: var(--clr-primary); */
+:root {
+    --clr-white: #ffffff;
+    --clr-black: #000000;
+    --clr-grey: #e7e7e7;
+    --clr-dropMenu: #030303;
+    --clr-dore: #af936c;
+    --clr-turquoise: #03989e;
+
+}
+/*
+=============== 
+Global css
+===============
+*/
+*{
+    font-family: 'Abhaya Libre', serif;
+}
+
+/*
+=============== 
+Animation
+===============
+*/
+
+/*
+=============== 
+Section ...
+===============
+*/
+a{ 
+    text-decoration:none;
+    color: var(--clr-white);
+}
+
+h1{
+    font-size: calc(3rem + 0.7vw);
+    text-align: center;
+}
+
+h2{
+    font-size: calc(2rem + 0.7vw);
+}
+
+p{
+    font-size: calc(0.6rem + 0.7vw);
+}
+
+.image-fond{
+    height: 60vh;
+    background-image: url("../img/suite-vue-tour-eiffel.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.presentation{
+    padding: 0 15%;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+.container1{
+    display: flex;
+}
+
+.text1{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 5%;
+}
+
+.container2{
+    display: flex;
+}
+
+.text2{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 5%;
+}
+
+.img1{
+    display: flex;
+    width: 50%;
+    height: 50%;
+}
+
+.bouton{
+    background-color: var(--clr-turquoise);
+    color: var(--clr-white);
+    text-decoration: none;
+    width:max-content;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.icon{
+    display: flex;
+}
+
+.hotes-max{
+    padding-left: 1em;
+}
+
+/*
+=============== 
+Responsive ...
+===============
+*/
+
+@media screen and (max-width: 576px){
+    .image-fond{
+        background-position: left;
+    }
+}
+
+@media screen and (max-width: 992px){
+	.img1 {
+		width: 100%;
+	}
+
+    h2{
+        text-align: center;
+    }
+
+    .presentation {
+        margin-bottom: 50px;
+    }
+
+    .container1{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .text1{
+        padding: 0 5%;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .container2{
+        display: block;
+        margin-top: 30px;
+    }
+
+    .text2{
+        padding: 0 5%;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+}

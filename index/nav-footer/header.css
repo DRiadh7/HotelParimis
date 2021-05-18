@@ -1,0 +1,206 @@
+/*
+=============== 
+Fonts
+===============
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Pattaya&display=swap');
+
+/*
+=============== 
+Variables
+===============
+*/
+/*  color: var(--clr-primary); */
+:root {
+    --clr-white: #ffffff;
+    --clr-black: #000000;
+    --clr-grey: #e7e7e7;
+    --clr-dropMenu: #030303;
+    --clr-dore: #af936c;
+    --clr-turquoise: #03989e;
+
+}
+/*
+=============== 
+Global css
+===============
+*/
+*{
+    font-family: 'Abhaya Libre', serif;
+}
+/*
+=============== 
+Section IMG MAIN
+===============
+*/
+.imgMain{
+    width: 100%;
+    height: calc(40vh + 20vw);
+    margin-bottom: 2rem;
+    background-image: url(/index/img/shangri-la-rooftop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/*
+=============== 
+Section Paragraphe
+===============
+*/
+.paragrapheMain {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 20vh;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+.titreParagrapheMain {
+    width: 20%;
+    padding: 1rem;
+    border: inset 0.2rem var(--clr-dore);
+}
+.titreParagrapheMain h1,.titreParagrapheMain p {
+    padding: 0.3rem;
+}
+.descriptionParagrapheMain {
+    width: 60%;
+}
+.descriptionParagrapheMain p {
+    line-height: 1.5rem;
+}
+
+/*
+=============== 
+Section POSTE
+===============
+*/
+.mainPoste {
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    margin-bottom: 5vh;
+}
+.postePresse {
+    width: 50%;
+    height: 60vh;
+    background-image: url(/index/img/wyo7c01xaoxmrs1nn67d.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.posteActu {
+    width: 50%;
+    height: 60vh;
+    background-image: url(/index/img/cg45avrivm5vsqggo0xt.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.paraMainPoste {
+    background-color: var(--clr-dore);
+    width: 40%;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+}
+.btnMainPoste {
+    background-color: var(--clr-turquoise);
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 1rem;
+}
+/*
+=============== 
+Section Newsletter
+===============
+*/
+.mainNewsletter {
+    display: flex;
+    width: 100%;
+    margin-bottom: 5vh;
+}
+.newsletter {
+    width: 50%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.newsletter h2 {
+    margin: 1rem;
+    font-weight: bold;
+}
+.newsletter p {
+    margin: 0rem 1rem;
+}
+.newsletter input {
+    border: none;
+    background-color: var(--clr-grey);
+    padding: 1rem;
+    width: 15rem;
+    margin: 1rem;
+}
+.carte {
+    width: 50%;
+    height: 30vh;
+    background-color: var(--clr-grey);
+}
+/*
+=============== 
+Section Média
+===============
+*/
+@media screen and (max-width : 768px){
+    .paragrapheMain {
+        flex-direction: column;
+    }
+    .titreParagrapheMain{
+        width: 100%;
+        text-align: center;
+    }
+    .descriptionParagrapheMain {
+        width: 100%;
+    }
+    .descriptionParagrapheMain p {
+        padding: 0.7rem;
+    }
+    .mainPoste {
+        display: flex;
+        flex-direction: column;
+        height: 120vh;
+    }
+    .posteActu {
+        width: 100%;
+    }
+    .postePresse {
+        width: 100%;
+    }
+    .mainNewsletter {
+        display: flex;
+        flex-direction: column;
+    }
+    .newsletter {
+        width: 100%;
+        align-items: center;
+    }
+    .carte {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
