@@ -1,0 +1,68 @@
+/*
+=============== 
+Fonts
+===============
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Pattaya&display=swap');
+
+/*
+=============== 
+Variables
+===============
+*/
+/*  color: var(--clr-primary); */
+:root {
+    --clr-white: #ffffff;
+    --clr-black: #000000;
+    --clr-grey: #e7e7e7;
+    --clr-dropMenu: #030303;
+    --clr-dore: #e7c390;
+}
+/*
+=============== 
+Global css
+===============
+*/
+*{
+    font-family: 'Abhaya Libre', serif;
+}
+/*
+=============== 
+Section Press
+===============
+*/
+.titrePress {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: calc(1.7rem + 1.5vw);
+    font-weight: bold;
+}
+.galeriePress {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 1300px;
+    margin: 40px auto 0;
+}
+.itemPress {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background: url(https://images.unsplash.com/photo-1504711434969-e33886168f5c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+    background-size: cover;
+    position: relative;
+    box-shadow: 5px 5px 2px 1px rgba(2, 183, 255, 0.116);
+}
+.lienPress {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: var(--clr-black);
+    color: var(--clr-dore);
+    text-decoration: none;
+    padding: 0.5rem;
+}
