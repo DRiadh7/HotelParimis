@@ -82,7 +82,7 @@ li{
     width: 80%;
     margin: auto;
     display: flex;
-    margin-bottom: 5vh;
+    margin-bottom: 5%;
 }
 
 .imageGauche{
@@ -106,18 +106,18 @@ li{
 .equipement-bouton{
     display: flex;
     justify-content: space-around;
+    margin-bottom: 5%;
 }
 
 .equipement{
     width: 80vw;
-    height: 10vh;
+    height: 15vh;
     border: solid 1px black;
     align-content: center;
     display: flex;
     flex-wrap: wrap;
     margin: auto;
     flex-direction: column;
-   margin-bottom: 3vh;
 }
 
 .item-equipement{
@@ -136,7 +136,7 @@ li{
     border-radius: 10px;
     justify-content: center;
     margin: auto;
-    margin-bottom: 4vh;
+    margin-bottom: 10vh;
     font-size: calc(2rem + 0.7vw);
 }
 
@@ -206,7 +206,7 @@ Responsive ...
 
     .equipement{
         width: 95%;
-        height: 10vh;
+        height: 15vh;
         border: solid 1px black;
         align-content: center;
         display: flex;
@@ -259,12 +259,7 @@ Responsive ...
     }
 }
 
-@media screen and (max-width: 576px){
-	.equipement{
-        height: 14vh;
-
-    }
-    
+@media screen and (max-width: 576px){    
     .bouton-reserver {
         font-size: calc(1rem + 0.7vw);
     }
