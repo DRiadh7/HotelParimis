@@ -1,0 +1,424 @@
+/*style text*/
+
+.p1,.p2,.p3,.p4{
+
+    
+    font-size: calc(0.7rem + 0.7vw);
+    font-family: 'Abhaya Libre';
+    padding: 2% 2% 2% 2%;
+    
+}
+
+
+
+
+/*banniere*/
+
+
+.banniere{  
+    background-image: url(../img/banniere.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position:top;
+    position: relative;
+}
+
+.bg-color{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.514);
+
+}
+h1{
+    
+    text-align: center;
+    font-size: calc(14rem + 0.7vw);
+    font-family: 'Abhaya Libre';
+    font-weight:lighter;
+    font-style: italic;
+    text-shadow: 0px 1px 0px rgb(0, 0, 0), 0px -1px 0px rgba(0,0,0,.7);
+    color: #ffd8a1;  
+    position: absolute;
+    top : 50vh;
+    margin-top: -25vh;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+  
+    
+}
+    
+/*separateur1*/
+
+.separateur1{
+
+    height: 20vh;
+    background:linear-gradient(#af936c, white);
+}
+
+
+/*h2*/
+
+h2{
+    font-size: calc(2rem + 00.7vw);
+    font-family: 'Abhaya Libre';
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
+
+/*section1*/
+
+.section1{
+
+    width: 100%;
+    height: 50vh;
+    
+
+}
+
+.container1{
+
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.img1{
+    width: 65%;
+    height: auto;
+    position: absolute;
+    right: 0vw;
+    padding-right: 15%;
+}
+
+.text1{
+    position: absolute;
+    left: 12vw;
+    top: 8vh;
+    background: linear-gradient(#af936c, white);
+    width: 350px;
+    height: 100%;
+    border-bottom: ridge 30px #03989e;
+    border-left: groove 30px #03989e;
+    
+
+    
+}
+
+    
+/*separateur2*/
+
+.separateur2{
+
+    height: 10vh;
+    margin-top: 5vh;
+}
+
+
+
+/*section2*/
+
+.section2{
+
+    width: 100%;
+    height: 50vh;
+    
+
+}
+
+.container2{
+
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.img2{
+    width: 65%;
+    height: auto;
+    position: absolute;
+    left: 0vw;
+    padding-left: 15%;
+}
+
+.text2{
+    position: absolute;
+    right: 12vw;
+    top: 8vh;
+    background: linear-gradient(#af936c, white);
+    width: 350px;
+    height: 100%;
+    border-bottom: ridge 30px #03989e;
+    border-right: groove 30px #03989e;
+}
+
+
+
+
+/*separateur3*/
+
+.separateur3{
+
+    height: 10vh;
+    margin-top: 5vh;
+}
+
+.h2_2{
+
+    border-top: groove 30px #03989e;
+    padding-top: 2vh;
+}
+.text3{
+
+    background: linear-gradient(#af936c, white);
+}
+
+.container3{
+
+    width: 100%;
+    height: 100%;
+    margin-top: 0vh;
+    align-content: center;
+}
+
+iframe{
+   
+    display: block;
+    border-style:none;
+    margin: 0 auto;
+}
+
+
+/*separateur3*/
+
+.separateur4{
+
+    height: 20vh;
+    background:linear-gradient(white,#af936c);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*responsive*/
+
+
+
+
+@media screen and (max-width: 1200px){
+    h1{
+        font-size: calc(9rem + 0.7vw);
+        top: 50%;
+        margin-top: -20%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .text1{
+        width: 300px;
+        height: 80%;
+        border-bottom: ridge 30px #03989e;
+        border-left: groove 30px #03989e;
+    }
+    .separateur2{
+        height: 7vh;
+        margin-top: 0vh;
+    }
+
+    .text2{
+        width: 300px;
+        height: 80%;
+        border-bottom: ridge 30px #03989e;
+        border-right: groove 30px #03989e;
+    }
+
+    .separateur3{
+        height: 7vh;
+        margin-top: 0vh;
+    }
+}
+
+
+@media screen and (max-width: 992px){
+    h1{
+        font-size: calc(7rem + 0.7vw);
+        top: 50%;
+        margin-top: -15%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section1{
+
+        height: 100%;
+    }
+
+    .container1{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .img1{
+        position: unset;
+        padding-right: 0vw;
+        width: 100%;
+    }
+    .text1{
+        flex-direction: column;
+        position: unset;
+        width: 100%;
+        height: 20vh;
+        border-bottom: none;
+        border-left: none;
+        border-top: groove 30px #03989e;
+        border-bottom: ridge 30px #03989e;
+    }
+
+   
+
+    .section2{
+        height: 100%;
+        margin-top: 10vh;
+    }
+
+    .container2{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .img2{
+        position: unset;
+        padding-left: 0vw;
+        width: 100%;
+    }
+    .text2{
+        flex-direction: column;
+        position: unset;
+        width: 100%;
+        height: 20vh;
+        border-bottom: none;
+        border-right: none;
+        border-top: groove 30px #03989e;
+        border-bottom: ridge 30px #03989e;
+    }
+
+   
+
+    .separateur2{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+
+    h1{
+        font-size: calc(5rem + 0.7vw);
+        top: 50%;
+        margin-top: -15%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container1{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .img1{
+        position: unset;
+        padding-right: 0vw;
+        width: 100%;
+    }
+    .text1{
+        flex-direction: column;
+        position: unset;
+        width: 100%;
+        border-bottom: none;
+        border-left: none;
+        border-top: groove 20px #03989e;
+        border-bottom: ridge 20px #03989e;
+    }
+    
+    .container2{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .img2{
+        position: unset;
+        padding-left: 0vw;
+        width: 100%;
+    }
+    .text2{
+        flex-direction: column;
+        position: unset;
+        width: 100%;
+        border-bottom: none;
+        border-left: none;
+        border-top: groove 20px #03989e;
+        border-bottom: ridge 20px #03989e;
+    }
+
+}
+
+
+@media screen and (max-width: 576px){
+
+    h1{
+        font-size: calc(4rem + 0.7vw);
+        top: 50%;
+        margin-top: -5%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    iframe{
+
+        width: 100%;
+    }
+
+}
+
+
+/*responsive paysage*/
+
+@media screen and (max-height: 576px){
+
+    .text1,.text2{
+
+    height: 40vh;
+    
+    }
+}
+
+@media screen and (max-height: 360px){
+
+    .text1,.text2{
+
+    height: 40vh;
+
+    }
+}
+
