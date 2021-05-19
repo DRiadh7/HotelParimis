@@ -1,0 +1,92 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap');
+
+/*
+=============== 
+Variables
+===============
+*/
+/*  color: var(--clr-primary); */
+:root {
+    --clr-white: #ffffff;
+    --clr-black: #000000;
+    --clr-grey: #e7e7e7;
+    --clr-dropMenu: #030303;
+    --clr-dore: #af936c;
+    --clr-turquoise: #03989e;
+
+}
+/*
+=============== 
+Global css
+===============
+*/
+*{
+    font-family: 'Abhaya Libre', serif;
+}
+
+/*
+=============== 
+Animation
+===============
+*/
+.conteneur{ display: flex;}
+.gauche{ width: 120%; min-height: 300px; }
+.droite{ width: 120%; min-height: 300px; }
+.droite img{ border: 2px solid; }
+
+/*
+=============== 
+Section ...
+===============
+*/
+a{ 
+    text-decoration:none;
+    color: var(--clr-white);
+}
+
+h1{
+    font-size: calc(3rem + 0.7vw);
+    text-align: center;
+}
+
+h2{
+    font-size: calc(2rem + 0.7vw);
+}
+
+p{
+    font-size: calc(0.6rem + 0.7vw);
+}
+
+.presentation{
+    padding: 0 15%;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+
+
+
+
+
+
+.bouton{
+    background-color: var(--clr-turquoise);
+    color: var(--clr-white);
+    text-decoration: none;
+    width:max-content;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.icon{
+    display: flex;
+}
+
+.hotes-max{
+    padding-left: 1em;
+}
