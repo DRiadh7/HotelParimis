@@ -1,0 +1,68 @@
+/*
+=============== 
+Fonts
+===============
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Pattaya&display=swap');
+
+/*
+=============== 
+Variables
+===============
+*/
+/*  color: var(--clr-primary); */
+:root {
+    --clr-white: #ffffff;
+    --clr-black: #000000;
+    --clr-grey: #e7e7e7;
+    --clr-dropMenu: #030303;
+    --clr-dore: #af936c;
+    --clr-turquoise: #03989e;
+
+}
+/*
+=============== 
+Global css
+===============
+*/
+*{
+    font-family: 'Abhaya Libre', serif;
+}
+a {
+    text-decoration: none;
+    color: var(--clr-black);
+}
+/*
+=============== 
+Section Plan du site
+===============
+*/
+.planSiteLienMain {
+    text-align: center;
+    margin: 0 auto;
+}
+.planSiteLienMain h1 {
+    text-align: center;
+    margin: 1rem;
+    font-weight: bold;
+    font-size: 3rem;
+}
+.planSiteLienMain ul{
+    margin-top: 3.5rem;
+}
+.planSiteLienMain li {
+    padding: 0.3rem;
+}
+.planSiteLienMain a:hover{
+    color: var(--clr-dore);
+    border-bottom: 1px solid black;
+}
+
+
+
+
+
+
+
+

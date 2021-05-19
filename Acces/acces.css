@@ -1,0 +1,90 @@
+/*
+=============== 
+Fonts
+===============
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Pattaya&display=swap');
+
+/*
+=============== 
+Variables
+===============
+*/
+/*  color: var(--clr-primary); */
+:root {
+    --clr-white: #ffffff;
+    --clr-black: #000000;
+    --clr-grey: #e7e7e7;
+    --clr-dropMenu: #030303;
+    --clr-dore: #af936c;
+    --clr-turquoise: #03989e;
+
+}
+/*
+=============== 
+Global css
+===============
+*/
+*{
+    font-family: 'Abhaya Libre', serif;
+}
+/*
+=============== 
+Section acces
+===============
+*/
+.acces {
+    width: 100%;
+    height: 400px;
+    margin-top: 1rem;
+    display: flex;
+}
+.carteAcces {
+    width: 50%;
+    min-height: 400px;
+}
+.infoAcces {
+    width: 50%;
+    min-height: 400px;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.infoAcces h1{
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: bold;
+}
+.infoAcces h3 {
+    padding: 1rem 0;
+    font-weight: bold;
+}
+.infoAcces p {
+    padding: 0 1rem;
+    font-size: 1.2rem;
+}
+.iconTransport span {
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+.iconTransport img {
+    width: 20px;
+    margin: 0 0.3rem;
+}
+.adressAcess, .iconTransport {
+    margin: 1rem 0;
+}
+@media screen and (max-width : 768px) {
+    .acces {
+        flex-direction: column;
+    }
+    .carteAcces {
+        width: 100%;
+    }
+    .infoAcces {
+        width: 100%;
+    }
+}

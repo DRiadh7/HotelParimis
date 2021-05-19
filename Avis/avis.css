@@ -1,0 +1,129 @@
+/*
+=============== 
+Fonts
+===============
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Pattaya&display=swap');
+
+/*
+=============== 
+Variables
+===============
+*/
+/*  color: var(--clr-primary); */
+:root {
+    --clr-white: #ffffff;
+    --clr-black: #000000;
+    --clr-grey: #e7e7e7;
+    --clr-dropMenu: #030303;
+    --clr-dore: #af936c;
+    --clr-turquoise: #03989e;
+
+}
+/*
+=============== 
+Global css
+===============
+*/
+*{
+    font-family: 'Abhaya Libre', serif;
+}
+/*
+=============== 
+Section Avis
+===============
+*/
+
+.avis {
+    display: flex;
+}
+.avis label, .avis input {
+    display: block;
+    width: 60%;
+    
+}
+.avis input {
+    padding: 0.5rem;
+}
+#taAvis {
+    width: 90%;
+    height: 10rem;
+    padding: 0.5rem;
+}
+.addAvis {
+    width: 40%;
+    padding: 2rem;
+}
+.addAvis h2, .listeAvis h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.listeAvis {
+    width: 60%;
+    padding: 2rem;
+}
+.inputAvisPrenom {
+    margin-bottom: 1rem;
+}
+.inputAvisTitre {
+    margin-bottom: 1rem;
+}
+.star {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+.btnAvis {
+    padding: 1rem;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    border-radius: 9999px;
+    border: none;
+    background-color: #030303;
+    color: var(--clr-white);
+}
+.btnAvis:hover {
+    background-color: var(--clr-dore);
+}
+
+/* Avis précédents */
+.itemListeAvis {
+    margin: 2rem 0;
+    border: 7px solid var(--clr-dore);
+    padding: 1rem;
+}
+.infoItemListeAvis {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.listeAvisColor {
+    color: var(--clr-dore);
+}
+.infoItemListeAvisPrenom, .infoItemListeAvisTitre {
+    font-weight: bold;
+    color: var(--clr-black);
+    font-style: italic;
+    font-variant: small-caps;
+}
+
+@media screen and (max-width : 768px) {
+    .avis {
+        flex-direction: column;
+    }
+    .addAvis {
+        width: 100%;
+    }
+    .listeAvis {
+        width: 100%;
+    }
+}
+@media screen and (max-width : 576px){
+    .infoItemListeAvis {
+        font-size: 0.7rem;
+    }
+}
+
+
+
