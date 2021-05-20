@@ -6,76 +6,163 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../reset.css">
     <link rel="stylesheet" href="css/spa.css">
+    <link rel="stylesheet" href="../index/nav-footer/style.css">
+    <link rel="shortcut icon" href="/index/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.min.css">
     <script src="js/jquery-3.6.0.min.js"></script>
     <title>Parimis - Spa et Soins</title>
 </head>
 <body>
 
 
+ <!-- =============== 
+    Section Navbar
+    ===============-->
+    <!-- top -->
+    <section class="topBtn">
+        <a href="#header"><i class="fas fa-chevron-up"></i></a>
+    </section>
+    <header id="header">
+        
+        <div class="logo">
+            <a href="../index/nav-footer/index.html">
+                <h1>HOTEL PARIMIS</h1>
+                <h2>PARIS</h2>
+            </a>
+        </div>
+        <ul class="lienNav">
+            <li><a href="#">CHAMBRES</a></li>
+            <li><a href="#">RESTAURANT</a></li>
+            <li><a href="#">SPA & FITNESS</a></li>
+            <li><a href="#">ACTUALITÉS</a></li>
+            <li><a href="#">ÉVÉNEMENTS</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">RÉSERVATION</a></li>
+        </ul>
+        <div class="autreNav">
+            <div class="lang">
+                <span><a href="#">FR</a></span>
+                <span>|</span>
+                <span><a href="#">EN</a></span>
+            </div>
+            <div class="panier">
+                <a href="#">MON PANIER <i class="fas fa-store-alt"></i></a>
+            </div>
+            <div class="recherche">
+                <input type="search" placeholder="Recherche">
+            </div>
+    
+        </div>
 
+        <!-- MENU HUMBERGER -->
+        <i class="fas fa-bars" id="openMenu"></i>
+       
+    </header>
+    <!-- DROP MENU -->
+    <section id="menuBurger">
+         <div class="dropMenu">
+            <i class="far fa-times-circle" id="closeMenu"></i>
+
+            <ul class="itemDropMenu">
+                <li><a href="#">CHAMBRES</a></li>
+                <li><a href="#">RESTAURANT</a></li>
+                <li><a href="#">SPA & FITNESS</a></li>
+                <li><a href="#">ACTUALITÉS</a></li>
+                <li><a href="#">ÉVÉNEMENTS</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">RÉSERVATION</a></li>
+            </ul> 
+        </div>
+    </section>
 
 
 
 <main>
 
-    <h1>Spa et Soins</h1>
+    <h1 class="h1_spa">Spa et Soins</h1>
 
-    <section class="section1">
-        <div class="img1">
+    <section class="section1_spa">
+        <div class="img1_spa">
             <img class="spa1" src="img/spa1.jpg" alt="spa1" title="Spa-Parimis">
         </div>
-        <div class="text1">
-            <h2 class="titre">Profitez de nos installations...</h2>
+        <div class="text1_spa">
+            <h2 class="titre_spa">Profitez de nos installations...</h2>
             <br>
-            <p class="p1">Dépaysez-vous au coeur de la capitale, grâce à notre <strong>espace spa et détente.</strong>Laissez-vous séduire par ce lieu à la fois agréable et atypique, calme et exaltant. <span class="span1">Réservé à notre clientèle, et ouvert tous les jours de 7h à 22h.</span> </p>
+            <p class="p1_spa">Dépaysez-vous au coeur de la capitale, grâce à notre <strong>espace spa et détente.</strong>Laissez-vous séduire par ce lieu à la fois agréable et atypique, calme et exaltant. <span class="span1">Réservé à notre clientèle, et ouvert tous les jours de 7h à 22h.</span> </p>
         </div>
     </section>
 
-    <section class="section2">
-        <div class="text2">
-            <h2 class="titre">...et de nos gammes de soins</h2>
+    <section class="section2_spa">
+        <div class="text2_spa">
+            <h2 class="titre_spa">...et de nos gammes de soins</h2>
             <br>
-            <p class="p2">Envie de vous couper de l'effervescence parisienne ? De vous ressourcer ? Profitez de nos <strong><span class="span1">soins et massages</span></strong>, réalisés par des professionnels confirmés. Vous trouverez nos différents programmes détente ci-dessous, ou en vous adressant à la reception de l'hotel.</p>
+            <p class="p2_spa">Envie de vous couper de l'effervescence parisienne ? De vous ressourcer ? Profitez de nos <strong><span class="span1">soins et massages</span></strong>, réalisés par des professionnels confirmés. Vous trouverez nos différents programmes détente ci-dessous, ou en vous adressant à la reception de l'hotel.</p>
         </div>
 
-        <div class="img2">
+        <div class="img2_spa">
             <img class="spa2" src="img/spa2.jpg" alt="spa2" title="Spa-Parimis2">
         </div>
     </section>
 
-    <section class="separateur1"></section>
+    <section class="separateur1_spa"></section>
 
 
-    <section class="gammes">
-        <h2 class="titre2">Nos gammes</h2>
+    <section class="gammes_spa">
+        <h2 class="titre2_spa">Nos gammes</h2>
         <br>
         <div class="img_flex">
-            <div class="img3"><img src="img/spa3.jpg" alt="spa3">
-                <p class= "hide1">Massage Détente<br class="ligne"><span class="prix">60€</span><br class="ligne">(30 min)<br class="ligne">À la fois relaxant et profond, il vous plongera dans une totale détente musculaire</p>
+            <div class="img3_spa"><img src="img/spa3.jpg" alt="spa3">
+                <p class= "hide1">Massage Détente<br class="ligne"><span class="prix_spa">60€</span><br class="ligne">(30 min)<br class="ligne">À la fois relaxant et profond, il vous plongera dans une totale détente musculaire</p>
                 <p class="soin2">Détente</p></div>
 
-            <div class="img4"><img src="img/spa4.jpg" alt="spa4">
-                <p class= "hide1">Massage Découverte<br class="ligne"><span class="prix">80€</span><br class="ligne">(45 min)<br class="ligne">Invitation à une escapade indienne, ce massage vous apportera une réelle détente en apaisant toutes vos tensions et un afflux d’énergie.</p>
+            <div class="img4_spa"><img src="img/spa4.jpg" alt="spa4">
+                <p class= "hide1">Massage Découverte<br class="ligne"><span class="prix_spa">80€</span><br class="ligne">(45 min)<br class="ligne">Invitation à une escapade indienne, ce massage vous apportera une réelle détente en apaisant toutes vos tensions et un afflux d’énergie.</p>
                 <p class="soin2">Découverte</p></div>
 
-            <div class="img5"><img src="img/spa5.jpg" alt="spa5">
-                <p class= "hide1">Massage Relaxation<br class="ligne"><span class="prix">90€</span><br class="ligne">(50 min)<br class="ligne">Les mains et les pierres chaudes ne font qu’un pour de délicats effleurements sur l’ensemble du corps…</p>
+            <div class="img5_spa"><img src="img/spa5.jpg" alt="spa5">
+                <p class= "hide1">Massage Relaxation<br class="ligne"><span class="prix_spa">90€</span><br class="ligne">(50 min)<br class="ligne">Les mains et les pierres chaudes ne font qu’un pour de délicats effleurements sur l’ensemble du corps…</p>
                 <p class="soin3">Relaxation</p></div>
 
-            <div class="img6"><img src="img/spa6.jpg" alt="spa6">
-                <p class= "hide1">Massage Plaisir<br class="ligne"><span class="prix">90€</span><br class="ligne">(50 min)<br class="ligne">Laissez-vous envelopper par la douce chaleur d’une bougie devenue huile de massage, pour un massage d’une infinie douceur.</p>
+            <div class="img6_spa"><img src="img/spa6.jpg" alt="spa6">
+                <p class= "hide1">Massage Plaisir<br class="ligne"><span class="prix_spa">90€</span><br class="ligne">(50 min)<br class="ligne">Laissez-vous envelopper par la douce chaleur d’une bougie devenue huile de massage, pour un massage d’une infinie douceur.</p>
                 <p class="soin4">Plaisir</p></div>
 
-            <div class="img7"><img src="img/spa7.jpg" alt="spa7">
-                <p class= "hide1">Massage Détente<br class="ligne"><span class="prix">120€</span><br class="ligne">(60 min)<br class="ligne">Massage Ayurvédique, Massage Relaxant aux Huiles Essentielles, Massage aux pierres Chaudes, Massage à l’élixir de Bougie, Massage Californien.</p>
+            <div class="img7_spa"><img src="img/spa7.jpg" alt="spa7">
+                <p class= "hide1">Massage Détente<br class="ligne"><span class="prix_spa">120€</span><br class="ligne">(60 min)<br class="ligne">Massage Ayurvédique, Massage Relaxant aux Huiles Essentielles, Massage aux pierres Chaudes, Massage à l’élixir de Bougie, Massage Californien.</p>
                 <p class="soin5">Evasion</p></div>
         </div>
     </section>
 </main>
 
 
+<!-- =============== 
+        Section Footer
+        ===============-->
 
-
+        <footer class="footer">
+            <div class="lienFooter">
+                <ul class="itemLienFooter">
+                    <li><a href="#">Recrutement</a></li> 
+                    <li><a href="#">Presse</a></li>
+                    <li><a href="#">Avis</a></li>
+                    <li><a href="#">Qui somme-nous ?</a></li>
+                    <li><a href="#">Plan du site</a></li>
+                    <li><a href="#">Accès</a></li>
+                </ul>
+            </div>
+            <div class="logoPartageFooter">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+    
+            <p>HOTEL PARIMIS PARIS | 1 avenue Montaigne, 75008 Paris | RESERVATION : +33 404404 </p>
+            <p class="legal">@2021 HOTEL PARIMIS PARIS | <a href="#">Mention-légal</a> <a href="#"> CGV</a><i class="fas fa-print"></i></p>
+    
+        </footer>
+        
+    
+    <script src="../index/nav-footer/menu.js"></script>
 
     <script>
         $('.hide1').on('mouseenter',function(){

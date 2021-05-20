@@ -74,15 +74,15 @@
         Section Main
         ===============-->
     <main>
-        <h1>Qui sommes-nous?</h1>
+        <h1 class="h1_presentation">Qui sommes-nous?</h1>
 
-        <section class="carroussel">
-            <img src="img/1.jpg" class = "image1" title="presentation" alt="img">
+        <section class="carroussel_presentation">
+            <img src="img/1.jpg" class = "image1_presentation" title="presentation" alt="img">
         </section>
 
         <section class="text_aside">
             <aside>
-                <h2 class="contact">Contact</h2>
+                <h2 class="contact_presentation">Contact</h2>
                 <br>
                 <p>
                 Hôtel PARIMIS <br>
@@ -97,26 +97,26 @@
                 Réservation <br>
                 +33 (1) 49 55 30 01 <br>
                 <br>
-                <a  class="lien" href="fichiers/brochure-parimis-chambres-suites.pdf" target="_blank">Télécharger la brochure</a> </p>
+                <a  class="lien_presentation" href="fichiers/brochure-parimis-chambres-suites.pdf" target="_blank">Télécharger la brochure</a> </p>
             </aside>
 
-            <div class="text1">
+            <div class="text1_presentation">
                 <h2>Une maison historique</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis similique unde atque! Inventore necessitatibus ullam asperiores hic, iure temporibus ratione consequuntur eligendi, non cumque voluptatum, rerum eveniet quibusdam sed nesciunt?</p>
             </div>
         </section>
 
-        <section class="text2">
+        <section class="text2_presentation">
             <h2>Un lieu de prestige et d'excellence</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis similique unde atque! Inventore necessitatibus ullam asperiores hic, iure temporibus ratione consequuntur eligendi, non cumque voluptatum, rerum eveniet quibusdam sed nesciunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae rerum nesciunt temporibus nemo itaque incidunt neque laboriosam. Nulla, ab veniam necessitatibus molestiae optio asperiores recusandae non minima, voluptatibus distinctio qui.</p>
         </section>
 
-        <section class="text3">
+        <section class="text3_presentation">
             <h2>Une équipe d'experts à votre service</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis similique unde atque! Inventore necessitatibus ullam asperiores hic, iure temporibus ratione consequuntur eligendi, non cumque voluptatum, rerum eveniet quibusdam sed nesciunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eaque laudantium provident aperiam voluptas veniam ad quod, nam ipsum assumenda eius incidunt odit eligendi, odio praesentium rerum nesciunt aspernatur necessitatibus.</p>
         </section>
 
-        <section class="hidden">
+        <section class="hidden_presentation">
             <div class= "hid1" ><h2>Contact</h2>
                 <br>
                 <p>
@@ -133,10 +133,13 @@
                 Réservation <br>
                 +33 (1) 49 55 30 01 <br>
                 <br>
-                <a href="fichiers/brochure-parimis-chambres-suites.pdf" target="_blank">Télécharger la brochure</a> </p>
+                <a class="lien_presentation" href="fichiers/brochure-parimis-chambres-suites.pdf" target="_blank">Télécharger la brochure</a> </p>
             </div>
                     
         </section>
+
+        <section class="separateur1_presentation"></section>
+        
     </main>
     <!-- =============== 
     Section Footer
@@ -169,17 +172,17 @@
             var i = 1;
             function changementImage()
             {
-                i += 1; // on ajoute 1 a i.
-                $('.image1').attr('src', 'img/' + i+'.jpg');
+                i += 1; 
+                $('.image1_presentation').attr('src', 'img/' + i+'.jpg');
                 console.info(i+'.jpg');
                 if(i === 6)
                 {
-                    i = 0; // on repart a 0.
-                    changementImage(); // ici je demande à la fonction de se relancer
+                    i = 0; 
+                    changementImage(); 
                 }
-                //if(i === 10) clearInterval(timer); // on arrete le carousel.	
+                	
             }
-            var timer = setInterval(changementImage, 5000); // on appelle la fonction changementImage() toutes les 2 secondes    
+            var timer = setInterval(changementImage, 5000);    
         }) 
     </script>
 </body>
