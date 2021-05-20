@@ -42,7 +42,7 @@ Section IMG MAIN
     width: 100%;
     height: calc(40vh + 20vw);
     margin-bottom: 2rem;
-    background-image: url(/index/img/shangri-la-rooftop.jpg);
+    background-image: url(../img/shangri-la-rooftop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     /* background-attachment: fixed; */
@@ -90,7 +90,7 @@ Section POSTE
 .postePresse {
     width: 50%;
     height: 60vh;
-    background-image: url(/index/img/wyo7c01xaoxmrs1nn67d.png);
+    background-image: url(../img/wyo7c01xaoxmrs1nn67d.png);
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -98,7 +98,7 @@ Section POSTE
 .posteActu {
     width: 50%;
     height: 60vh;
-    background-image: url(/index/img/cg45avrivm5vsqggo0xt.jpg);
+    background-image: url(../img/cg45avrivm5vsqggo0xt.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
