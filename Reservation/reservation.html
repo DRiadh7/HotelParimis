@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/Reservation/reservation.css">
+</head>
+<body>
+      <!-- =============== 
+        Section Main
+        ===============-->
+    <main>
+        <h1 class="titreFormReservation">FORMULAIRE DE RÉSERVATION</h1>
+
+        <form action="" class="formReservation">
+            <div class="flex">
+                <div class="nomReservation">
+                    <label for="">Nom : *</label>
+                    <input type="text" name="" id="">
+                    <p class="errorFormReservation">lorem</p>
+                </div>
+                <div class="prenomReservation">
+                    <label for="">Prenom : *</label>
+                    <input type="text" name="" id="">
+                    <p class="errorFormReservation">lorem</p>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="emailReservation">
+                    <label for="">Email : *</label>
+                    <input type="email" name="" id="">
+                </div>
+                <div class="telReservation">
+                    <label for="">Téléphone : *</label>
+                    <input type="tel" name="" id="">
+                </div>
+            </div>
+            <div class="flex">
+                <div class="nbPersonne">
+                    <label for="">Nombres de Personne : *</label>
+                    <input type="number" name="" id="">
+                </div>
+                <div class="gammeReservation">
+                    <label for="chambre">Gamme chambres: *</label>
+                    <select id="chambre" name="chambre">
+                        <option value="GCQ">Gamme Classique</option>
+                        <option value="GC">Gamme Confort</option>
+                        <option value="GD">Gamme Deluxe</option>
+                        <option value="GS">Gamme Suite</option>
+                    </select>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="dateArriveReservation">
+                    <label for="">Date d'arrivée : *</label>
+                    <input type="date" name="" id="">
+                </div>
+                <div class="dateDepartReservation">
+                    <label for="">Date de départ : *</label>
+                    <input type="date" name="" id="">
+                </div>
+            </div>
+               
+            <button type="submit" class="btnFormReservation">Ajouter au Panier</button>
+        </form>
+    </main>
+</body>
+</html>
