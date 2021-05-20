@@ -6,9 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conditions générales de vente | Parimis Hôtel</title>
     <meta name="description" content="Mentions légales du site de l'hôtel PARIMIS">
+    <link rel="stylesheet" href="../reset.css">
     <link rel="stylesheet" href="css/cgv.css">
+    <link rel="stylesheet" href="../index/nav-footer/header.css">
+    <link rel="stylesheet" href="../index/nav-footer/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 </head>
 <body>
+    <!-- =============== 
+    Section Navbar
+    ===============-->
+    <header id="header">
+        <!-- top -->
+        <section class="topBtn">
+            <a href="#header"><i class="fas fa-chevron-up"></i></a>
+        </section>
+        <!-- logo -->
+        <div class="logo">
+            <a href="/index/nav-footer/index.html">
+                <h1>HOTEL PARIMIS</h1>
+                <h2>PARIS</h2>
+            </a>
+        </div>
+        <ul class="lienNav">
+            <li><a href="#">CHAMBRES</a></li>
+            <li><a href="#">RESTAURANT</a></li>
+            <li><a href="#">SPA & FITNESS</a></li>
+            <li><a href="#">ACTUALITÉS</a></li>
+            <li><a href="#">ÉVÉNEMENTS</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#" class="lienReservation">RÉSERVATION</a></li>
+        </ul>
+        <div class="autreNav">
+            <div class="lang">
+                <span><a href="#">FR</a></span>
+                <span>|</span>
+                <span><a href="#">EN</a></span>
+            </div>
+            <div class="panier">
+                <a href="#">MON PANIER <i class="fas fa-store-alt"></i></a>
+            </div>
+            <div class="recherche">
+                <input type="search" placeholder="Recherche">
+            </div>
+    
+        </div>
+
+        <!-- MENU HUMBERGER -->
+        <i class="fas fa-bars" id="openMenu"></i>
+    </header>
+    <!-- DROP MENU -->
+    <section id="menuBurger">
+         <div class="dropMenu">
+            <i class="far fa-times-circle" id="closeMenu"></i>
+
+            <ul class="itemDropMenu">
+                <li><a href="#">CHAMBRES</a></li>
+                <li><a href="#">RESTAURANT</a></li>
+                <li><a href="#">SPA & FITNESS</a></li>
+                <li><a href="#">ACTUALITÉS</a></li>
+                <li><a href="#">ÉVÉNEMENTS</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">RÉSERVATION</a></li>
+            </ul> 
+        </div>
+    </section>
+    <!-- =============== 
+        Section MAIN
+        ===============-->
     <main>    
         <h1>CONDITIONS GÉNÉRALES DE VENTE</h1>
 
@@ -52,5 +118,31 @@
         <p>Les présentes Conditions générales de vente sont régies par la loi française. Il en est ainsi pour les règles de fond comme pour les règles de forme. Les litiges relèveront de la compétence exclusive des juridictions françaises.</p>
         </div>
     </main>
+    <!-- =============== 
+    Section Footer
+    ===============-->
+
+    <footer class="footer">
+        <div class="lienFooter">
+            <ul class="itemLienFooter">
+                <li><a href="#">Recrutement</a></li> 
+                <li><a href="#">Presse</a></li>
+                <li><a href="../../Avis/avis.html">Avis</a></li>
+                <li><a href="#">Qui sommes-nous ?</a></li>
+                <li><a href="#">Plan du site</a></li>
+                <li><a href="#">Accès</a></li>
+            </ul>
+        </div>
+        <div class="logoPartageFooter">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+
+        <p>HOTEL PARIMIS PARIS | 1 avenue Montaigne, 75008 Paris | RESERVATION : +33 404404 </p>
+        <p class="legal">@2021 HOTEL PARIMIS PARIS | <a href="/Mentions légales/mentions-legales.html">Mentions légales</a> <a href="/CGV/cgv.html"> CGV</a></i><a href="javascript:window.print()"><i class="fas fa-print"></i></a></p>
+    </footer>
+    <script src="../index/nav-footer/header.js"></script>
+    <script src="../index/nav-footer/menu.js"></script>
 </body>
 </html>

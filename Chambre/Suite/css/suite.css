@@ -41,18 +41,20 @@ Animation
 Section ...
 ===============
 */
-a{ 
+
+/*Généralités*/
+main a{ 
     text-decoration:none;
     color: var(--clr-white);
 }
 
-h1{
+main h1{
     font-size: calc(3rem + 0.7vw);
     text-align: center;
     margin-bottom: 1em;
 }
 
-h2{
+main h2{
     font-size: calc(2rem + 0.7vw);
     text-align: center;
     margin-bottom: 0.5em;
@@ -73,17 +75,20 @@ li{
     list-style: inside;
 }
 
+/*Présentation chambre*/
 .presentation{
     padding: 0 15%;
     margin-top: 30px;
     margin-bottom: 60px;
 }
 
+/*Tarif chambre*/
 span.prix{
     font-style: italic;
     font-weight: bold;
 }
 
+/*Carrousel*/
 .carrousel{ 
     width: 80%;
     margin: auto;
@@ -109,12 +114,14 @@ span.prix{
     width: 13em;
 }
 
+/*Bloc équipement-bouton CTA*/
 .equipement-bouton{
     display: flex;
     justify-content: space-around;
     margin-bottom: 5%;
 }
 
+/*Equipement chambre*/
 .equipement{
     width: 80vw;
     height: 15vh;
@@ -133,10 +140,9 @@ span.prix{
     padding: 5px 0;
 }
 
+/* Bouton CTA réservation */
 .bouton-reserver{
     background-color: var(--clr-turquoise);
-    color: var(--clr-white);
-    text-decoration: none;
     width: max-content;
     padding: 5px;
     border-radius: 10px;
@@ -146,13 +152,14 @@ span.prix{
     font-size: calc(2rem + 0.7vw);
 }
 
+/* Bloc maillage interne */
 .autres-chambres{
     display: flex;
     justify-content: space-around;
     margin-bottom: 5vh;
 }
 
-.carte{
+.carte1{
     width: 33.3%;
     display: flex;
     flex-direction: column;
@@ -167,8 +174,6 @@ span.prix{
 .bouton-more{
     display: flex;
     background-color: var(--clr-turquoise);
-    color: var(--clr-white);
-    text-decoration: none;
     width:max-content;
     padding: 5px;
     border-radius: 10px;
