@@ -7,9 +7,10 @@
     <title>Document</title>
     <link rel="shortcut icon" href="/index/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.min.css">
-    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="../../reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="header.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 </head>
 <body>
     
@@ -35,7 +36,7 @@
             <li><a href="#">ACTUALITÉS</a></li>
             <li><a href="#">ÉVÉNEMENTS</a></li>
             <li><a href="#">CONTACT</a></li>
-            <li><a href="#">RÉSERVATION</a></li>
+            <li><a href="#" class="lienReservation">RÉSERVATION</a></li>
         </ul>
         <div class="autreNav">
             <div class="lang">
@@ -94,6 +95,14 @@
                 <p>Quatrième plus haut bâtiment des États-Unis, le Trump International Hotel & Tower® Chicago a inspiré le Burj Khalifa de Dubaï et est rapidement devenu l'un des meilleurs hôtels de luxe de Chicago et l'adresse la plus enviable du centre-ville. Fier d'être reconnu comme un hôtel quatre étoiles du guide de voyage Forbes et parmi un groupe d'hôtels d'élite qui sont VÉRIFIÉS . Notre restaurant, Terrace 16 , célèbre les saveurs vibrantes du terroir. </p>
             </div>
         </section>
+        <!-- =============== 
+        Section Défilement photo
+        ===============-->
+            <section>
+                <div class="boxPhoto">
+                    <img src="https://images.unsplash.com/photo-1619782087505-e1544bc70e1e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=766&q=80" alt="" class="zone1">
+                </div>
+            </section>
 
          <!-- =============== 
         Section Poste
@@ -137,7 +146,7 @@
             <ul class="itemLienFooter">
                 <li><a href="#">Recrutement</a></li> 
                 <li><a href="#">Presse</a></li>
-                <li><a href="/Avis/avis.html">Avis</a></li>
+                <li><a href="../../Avis/avis.html">Avis</a></li>
                 <li><a href="#">Qui somme-nous ?</a></li>
                 <li><a href="#">Plan du site</a></li>
                 <li><a href="#">Accès</a></li>
@@ -150,10 +159,10 @@
         </div>
 
         <p>HOTEL PARIMIS PARIS | 1 avenue Montaigne, 75008 Paris | RESERVATION : +33 404404 </p>
-        <p class="legal">@2021 HOTEL PARIMIS PARIS | <a href="#">Mention-légal</a> <a href="#"> CGV</a><i class="fas fa-print"></i></p>
+        <p class="legal">@2021 HOTEL PARIMIS PARIS | <a href="#">Mention-légal</a> <a href="#"> CGV</a></i><a href="javascript:window.print()"><i class="fas fa-print"></i></a></p>
 
     </footer>
-
-    <script src="/index/nav-footer/menu.js"></script>
+    <script src="header.js"></script>
+    <script src="menu.js"></script>
 </body>
 </html>

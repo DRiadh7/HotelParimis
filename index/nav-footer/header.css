@@ -19,7 +19,6 @@ Variables
     --clr-dropMenu: #030303;
     --clr-dore: #af936c;
     --clr-turquoise: #03989e;
-
 }
 /*
 =============== 
@@ -42,7 +41,7 @@ Section IMG MAIN
     width: 100%;
     height: calc(40vh + 20vw);
     margin-bottom: 2rem;
-    background-image: url(/index/img/shangri-la-rooftop.jpg);
+    background-image: url(../img/shangri-la-rooftop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     /* background-attachment: fixed; */
@@ -75,7 +74,22 @@ Section Paragraphe
 .descriptionParagrapheMain p {
     line-height: 1.5rem;
 }
-
+/*
+=============== 
+Section défilement photo
+===============
+*/
+.boxPhoto{
+    width: 50%;
+    height: calc(5rem + 20vw);
+    max-height: 20rem;
+    margin: 1rem auto;
+    background-color: #000000;
+}
+.boxPhoto img {
+    width: 100%;
+    height: 100%;
+}
 /*
 =============== 
 Section POSTE
@@ -90,7 +104,7 @@ Section POSTE
 .postePresse {
     width: 50%;
     height: 60vh;
-    background-image: url(/index/img/wyo7c01xaoxmrs1nn67d.png);
+    background-image: url(../img/wyo7c01xaoxmrs1nn67d.png);
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -98,7 +112,7 @@ Section POSTE
 .posteActu {
     width: 50%;
     height: 60vh;
-    background-image: url(/index/img/cg45avrivm5vsqggo0xt.jpg);
+    background-image: url(../img/cg45avrivm5vsqggo0xt.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -130,7 +144,7 @@ Section Newsletter
 }
 .newsletter {
     width: 50%;
-    height: 30vh;
+    min-height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -160,7 +174,7 @@ Section Newsletter
 }
 .carte {
     width: 50%;
-    height: 30vh;
+    min-height: 30vh;
     background-color: var(--clr-grey);
 }
 /*
@@ -202,6 +216,9 @@ Section Média
         align-items: center;
     }
     .carte {
+        width: 100%;
+    }
+    .boxPhoto{
         width: 100%;
     }
 }

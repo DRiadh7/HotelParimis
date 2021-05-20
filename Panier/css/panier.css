@@ -1,0 +1,130 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap');
+
+/*
+=============== 
+Variables
+===============
+*/
+/*  color: var(--clr-primary); */
+:root {
+    --clr-white: #ffffff;
+    --clr-black: #000000;
+    --clr-grey: #e7e7e7;
+    --clr-dropMenu: #030303;
+    --clr-dore: #af936c;
+    --clr-turquoise: #03989e;
+}
+/*
+=============== 
+Global css
+===============
+*/
+*{
+    font-family: 'Abhaya Libre', serif;
+}
+
+/*
+=============== 
+Animation
+===============
+*/
+
+
+/*
+=============== 
+Section ...
+===============
+*/
+.panier-paiement {
+    display: flex;
+    width: 55%;
+    margin: 10% auto;
+    box-shadow: 0.2em 0.2em 1em var(--clr-turquoise);
+}
+
+.detail-panier {
+    width: 55%;
+    padding: 1em;
+}
+
+.panier-vide {
+    text-align: center;
+    background: var(--clr-grey);
+    color: var(--clr-dore);
+    padding: 1em;
+}
+
+.prix-panier {
+    width: 45%;
+    border-left: 1px dashed gray;
+    padding: 1em;
+}
+
+.form-paiement {
+    font-size: 0.7em;
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.bouton-paiement {
+    color: var(--clr-white);
+    background-color: var(--clr-turquoise);
+    cursor: pointer;
+    padding: 0.5em 0.7em;
+    border-radius: 0.2rem;
+    border: none;
+}
+
+.cb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-cb img {
+    width: 1.5rem;
+}
+
+/*
+=============== 
+Responsive ...
+===============
+*/
+@media screen and (max-width: 580px){
+    .panier-paiement{
+        width: 80%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .panier-paiement{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .detail-panier{
+        width: 100%;
+    }
+
+    .prix-panier{
+        width: 100%;
+        border-left: 0;
+        border-top: 1px dashed gray;
+    }
+
+    .centre{
+        text-align: center;
+    }
+}

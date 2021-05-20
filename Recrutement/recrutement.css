@@ -35,13 +35,13 @@ Global css
 Section Main 
 ===============
 */
-.titreFormReservation {
+.titreFormRecrutement {
     text-align: center;
     margin: 2rem;
     font-size: 1.5rem;
     font-weight: bold;
 }
-.formReservation{
+.formRecrutement{
     width: 30rem;
     margin: 0 auto;
     background-color: #7a6b6b71;
@@ -53,21 +53,21 @@ Section Main
     display: flex;
     margin-bottom: 0.5rem;
 }
-.nomReservation, .prenomReservation, .emailReservation, .telReservation, .nbPersonne, .gammeReservation, .dateArriveReservation, .dateDepartReservation {
+.nomRecrutement, .prenomRecrutement, .emailRecrutement, .telRecrutement, .nbPersonne, .gammeRecrutement, .dateArriveRecrutement, .dateDepartRecrutement, .ta {
     display: flex;
     flex-direction: column;
     width: 100%;
     padding: 1rem;
 }
-.formReservation input{
+.formRecrutement input{
     padding: 0.5rem;
     border: none;
 }
-.formReservation label{
+.formRecrutement label{
     margin-bottom: 0.5rem;
     font-size: 1.1rem;
 }
-.btnFormReservation {
+.btnFormRecrutement {
    padding: 0.5rem;
    margin: 0 auto;
    font-size: 1rem;
@@ -75,23 +75,33 @@ Section Main
    border: none;
    cursor: pointer;
 }
-.btnFormReservation:hover {
+.btnFormRecrutement:hover {
     background-color: var(--clr-dore);
 }
 #chambre {
     padding: 0.5rem;
 }
-.errorFormReservation  {
+.errorFormRecrutement  {
     color: crimson;
     font-weight: bold;
     display: none;
+}
+.file {
+    width: 100%;
+    overflow: hidden;
+}
+#taRecrutement {
+    width: 100%;
+    min-height: 20vh;
+    border: none;
+    padding: 0.5rem;
 }
 @media screen and (max-width : 576px){
     .flex {
         flex-direction: column;
     }
-    .formReservation {
+    .formRecrutement {
         width: 90%;
+
     }
 }
-
