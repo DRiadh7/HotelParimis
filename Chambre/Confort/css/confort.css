@@ -79,6 +79,11 @@ li{
     margin-bottom: 60px;
 }
 
+span.prix{
+    font-style: italic;
+    font-weight: bold;
+}
+
 .carrousel{ 
     width: 80%;
     margin: auto;
