@@ -37,6 +37,7 @@ Section Avis
 
 .avis {
     display: flex;
+    margin: 2rem 0;
 }
 .avis label, .avis input {
     display: block;

@@ -16,9 +16,14 @@
     <!-- =============== 
     Section Navbar
     ===============-->
-    <header>
+    <header id="header">
+        <!-- top -->
+        <section class="topBtn">
+            <a href="#header"><i class="fas fa-chevron-up"></i></a>
+        </section>
+        <!-- logo -->
         <div class="logo">
-            <a href="#">
+            <a href="/index/nav-footer/index.html">
                 <h1>HOTEL PARIMIS</h1>
                 <h2>PARIS</h2>
             </a>
@@ -49,7 +54,6 @@
 
         <!-- MENU HUMBERGER -->
         <i class="fas fa-bars" id="openMenu"></i>
-       
     </header>
     <!-- DROP MENU -->
     <section id="menuBurger">
@@ -67,11 +71,10 @@
             </ul> 
         </div>
     </section>
-
-    <main>
-        <!-- =============== 
-        Section IMG MAIN
+    <!-- =============== 
+        Section MAIN
         ===============-->
+    <main>
             <div class="imgMain">
 
             </div>
@@ -116,13 +119,15 @@
             <div class="newsletter">
                 <h2>Newsletter</h2>
                 <p>Inscrivez-vous aux offres PARIMIS</p>
-                <input type="email" name="" id="" placeholder="Adress Email">
+                <input type="email" name="emailNewsLetter" id="emailNewsLetter" placeholder="Adress Email">
+                <button type="submit" class="btnNewsletter">Envoyer</button>
             </div>
             <div class="carte">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.640007172563!2d2.2998843508082496!3d48.86507470808924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fdd0dd39a4d%3A0x508194b82b12f012!2s1%20Avenue%20Montaigne%2C%2075008%20Paris!5e0!3m2!1sfr!2sfr!4v1621354214165!5m2!1sfr!2sfr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </section>
     </main>
+    
     <!-- =============== 
         Section Footer
         ===============-->
@@ -132,7 +137,7 @@
             <ul class="itemLienFooter">
                 <li><a href="#">Recrutement</a></li> 
                 <li><a href="#">Presse</a></li>
-                <li><a href="#">Avis</a></li>
+                <li><a href="/Avis/avis.html">Avis</a></li>
                 <li><a href="#">Qui somme-nous ?</a></li>
                 <li><a href="#">Plan du site</a></li>
                 <li><a href="#">Accès</a></li>
@@ -140,11 +145,11 @@
         </div>
         <div class="logoPartageFooter">
             <a href="#"><i class="fab fa-facebook-square"></i></a>
-            <a href="#"></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-linkedin"></i></a>
         </div>
 
-        <p>HOTEL PARIMIS PARIS | 400 AVENUE, Paris | RESERVATION : +33 000000 </p>
+        <p>HOTEL PARIMIS PARIS | 1 avenue Montaigne, 75008 Paris | RESERVATION : +33 404404 </p>
         <p class="legal">@2021 HOTEL PARIMIS PARIS | <a href="#">Mention-légal</a> <a href="#"> CGV</a><i class="fas fa-print"></i></p>
 
     </footer>

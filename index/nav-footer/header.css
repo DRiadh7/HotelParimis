@@ -28,6 +28,10 @@ Global css
 */
 *{
     font-family: 'Abhaya Libre', serif;
+    
+}
+html {
+    scroll-behavior: smooth;
 }
 /*
 =============== 
@@ -146,6 +150,13 @@ Section Newsletter
     padding: 1rem;
     width: 15rem;
     margin: 1rem;
+}
+.btnNewsletter {
+    padding: 0.5rem;
+    width: 10rem;
+    margin: 1rem;
+    border: none;
+    cursor: pointer;
 }
 .carte {
     width: 50%;

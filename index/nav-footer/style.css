@@ -17,12 +17,22 @@ Variables
     --clr-black: #000000;
     --clr-grey: #e7e7e7;
     --clr-dropMenu: #030303;
+    --clr-dore: #af936c;
 }
 /*
 =============== 
 Global css
 ===============
 */
+html {
+    scroll-behavior: smooth;
+}
+::selection {
+    background-color: #af936c85;
+}
+body {
+    position: relative;
+}
 a{
     font-family: 'Abhaya Libre', serif;
     text-decoration: none;
@@ -61,6 +71,7 @@ header {
     display: flex;
     justify-content: space-between;
     position: relative;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.247);
 }
 .logo{
     display: flex;
@@ -92,6 +103,11 @@ header {
     font-weight: bold;
     font-size: calc(0.2rem + 1vw);
 }
+.lienNav a:hover {
+    color: var(--clr-dore);
+    border-bottom: 2px solid var(--clr-black);
+    transition: 0.1s;
+}
 .autreNav {
     display: flex;
     flex-direction: column;
@@ -107,7 +123,7 @@ header {
     margin-left: 0.5rem;
 }
 .recherche input{
-    width: 6rem;
+    width: calc(3rem + 4vw);  
     margin: 0.4rem;
     padding: 0.3rem;
     background-color: var(--clr-grey);
@@ -128,7 +144,7 @@ header {
 }
 /* DROP MENU */
 .dropMenu {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     background-color: var(--clr-dropMenu);
@@ -137,7 +153,7 @@ header {
 }
 #closeMenu {
     position: absolute;
-    top: 10%;
+    top: 3%;
     right: 5%;
     color: rgb(206, 121, 121);
     z-index: 2;
@@ -156,6 +172,20 @@ header {
 .itemDropMenu a {
     color: var(--clr-white);
     font-size: 1.5rem;
+}
+.topBtn {
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    z-index: 2;
+    color: rgb(255, 255, 255);
+    background-color: rgb(153, 0, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    right: 1%;
+    bottom: 5%;
 }
 /*
 =============== 
@@ -182,9 +212,20 @@ Section Footer
     font-size: calc(0.4rem + 0.7vw);
     font-weight: bold;
 }
+.itemLienFooter a:hover {
+    color: var(--clr-white);
+    transition: 0.5s;
+}
 .logoPartageFooter {
     margin-bottom: 0.5rem;
-    font-size: calc(1rem + 0.7vw);
+    font-size: calc(1rem + 0.7vw); 
+}
+.logoPartageFooter a{
+    margin: 0.5rem;
+}
+.logoPartageFooter a:hover {
+    color: blue;
+    transition: 0.5s;
 }
 .footer p {
     margin-bottom: 1rem;
@@ -192,6 +233,9 @@ Section Footer
 }
 .legal a {
     margin: 0 0.5rem;
+}
+.fa-print {
+    cursor: pointer;
 }
 /*
 =============== 
