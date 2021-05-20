@@ -85,6 +85,11 @@ header {
     /* background: linear-gradient(to right, #24242357, rgba(175, 145, 9, 0.185), rgba(175, 145, 9, 0.185)); */
     background-color: #c54f7c46;
     animation: morph 7s linear infinite alternate;
+    scale: 0.9;
+    transition: 1s;
+}
+.logo:hover {
+    scale: 1;
 }
 .logo h2 {
     text-align: center;
@@ -101,12 +106,16 @@ header {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
     font-weight: bold;
-    font-size: calc(0.2rem + 1vw);
+    font-size: calc(0.1rem + 1vw);
 }
 .lienNav a:hover {
     color: var(--clr-dore);
     border-bottom: 2px solid var(--clr-black);
     transition: 0.1s;
+}
+.lienReservation {
+    background-color: #af936c77;
+    padding: 0.5rem;
 }
 .autreNav {
     display: flex;
@@ -119,6 +128,12 @@ header {
     margin-right: 0.4rem;
     font-size: calc(0.1rem + 0.9vw);
 }
+.lang a:hover {
+    color: var(--clr-dore);
+}
+.panier a:hover{
+    color: var(--clr-dore);
+}
 .panier i {
     margin-left: 0.5rem;
 }
@@ -130,7 +145,6 @@ header {
     border: none;
     font-size: calc(0.1rem + 0.9vw);
 }
-
 /* MENU HUMBERGER */
 #menuBurger {
     display: none;
@@ -200,6 +214,7 @@ Section Footer
     width: 100%;
     height: 30vh;
     background: rgb(167, 167, 167);
+    border-radius: 50% 50% 100% 0% / 97% 100% 0% 3% ;
 }
 .lienFooter {
     margin: 1rem 0;
@@ -256,6 +271,9 @@ Section Média
     #openMenu {
         display: block;
     } 
+    .footer {
+        border-radius: 0%;
+    }
 }
 
 
