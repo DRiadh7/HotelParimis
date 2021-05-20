@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier réservation | Parimis Hôtel</title>
+    <meta name="description" content="Panier réservation client">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="css/panier.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+    <main>
+        <section class="panier-paiement">
+            <div class="detail-panier">
+                <p>Panier</p>
+                <br>
+                <p>Détail de la réservation :</p>
+                <br>
+                <p class="panier-vide">Aucune chambre sélectionnée</p>
+            </div>
+
+            <div class="prix-panier">
+                <p class="centre">Paiement</p>
+                <br>
+                <p class="centre">Sous-total : 0 €</p>
+                <br>
+                <form action="#" class="form-paiement">
+                    <input type="checkbox" name="CGV" id="CGV" required /> 
+                    <label for="CGV">J'accepte les <a href="/CGV/cgv.html"> conditions générales de vente.</a></label>
+                <br>
+                <button class="bouton-paiement">Paiement</button>
+                </form>
+                <br>
+                <div class="cb">
+                    <div class="cb-acceptees">
+                        <p>CB acceptées :</p>
+                    </div>
+                    <div class="logo-cb">
+                        <img src="img/mastercard.png" alt="logo mastercard">
+                        <img src="img/visa.png" alt="logo visa">
+                        <img src="img/amex.png" alt="logo american express">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
