@@ -1,0 +1,230 @@
+/*
+=============== 
+Fonts
+===============
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Pattaya&display=swap');
+
+
+/*
+=============== 
+Global css
+===============
+*/
+/*body{
+    line-height: 1.5em;
+    letter-spacing: 1px;
+    margin: 0; /*117px;*/
+    padding-left: 40px;
+    box-sizing: border-box;
+    /*background-image: linear-gradient(to right, rgb(160, 147, 129), white, rgb(36, 65, 77) );
+    background-position: center;
+    background-repeat: repeat repeat;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */
+    /*Je souhaitais mettre une texture en fond mais je n'ai pas réussi à l'adapter à la taille de l'écran du navigateur*/
+
+
+}*/
+
+h1, h2, p{
+
+    font-family: 'Abhaya Libre', serif; /*typo police choisie pour l'ensemble du site*/
+    
+    }
+
+    .titre-principal h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        font-weight: bold;
+        font-size: calc(1.5rem + 0.7vw); /*taille des titres h1, cette propriété permet de fixer une valeur dite responsive*/
+    }
+
+
+    .form-contact{
+        width: 50%;
+        margin: 3.2rem auto 0 auto;
+        /*display: inline;
+        text-align: center; /*centre le formulaire
+        width: 100%;
+        font-size: calc(1rem + 0.7vw);*/
+    }
+
+
+    #form{
+        background: rgba(6, 94, 60, 0.178);
+        padding: 2.3rem 0.5rem;
+        border-radius: 5.3rem;
+        margin: 2%;
+    }
+
+    .form-input input, #civility{
+        
+        padding: 0.5rem;
+        width: 50%;
+        margin: 1.5rem;
+    }
+
+    .form-input-size{
+        display: block;
+        width: 40%;
+        height: 1.5rem;
+        padding: 0.3rem 0.4rem;
+        border-radius: 0.2rem;
+        /*outline: 0;*/
+        border-style: none;
+        margin-top: 0.4rem;
+        text-align: center;
+    }
+
+
+
+
+
+.imgsep{
+
+    width: 50%;
+    height: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    }
+
+
+p{
+    font-size: 1.12rem;
+    text-align: center, justify;
+    margin-right: 25%;
+    padding-left: 20%;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
+
+#message{ /*Textarea responsive*/
+
+    width: 90%;
+    height: 10rem;
+    padding: 0.5rem;
+
+}
+
+#submit, #reset{
+    margin-top: 5%;
+    margin-right: 40%;
+    margin-left: 25%;
+    width: 50%;
+    padding: 0.8rem;
+    background-color: rgba(130, 136, 127, 0.521);
+    color: white;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    border: none;
+
+}
+
+
+    /****************************RESPONSIVE******************************/
+
+/* On part du réglage mobile first donc smartphone */
+
+
+/* smartphone en paysage */
+
+@media screen and (max-width : 576px) {
+    
+    body{ 
+        display: flex;
+        background-size: cover;
+        /*background-repeat: no repeat;*/
+        width: 100%;
+        height: auto;
+    }
+
+
+    h1{
+        font-size: calc(2rem + 1.5vw);
+        width: 100%;
+
+    }
+
+    p{
+        font-size: 1rem;
+
+    }
+
+.form-input-size {
+
+        width: 100%;
+        display: block;
+}
+
+
+    .imgsep{
+            height: 5%;
+            width: 100%;
+            object-fit:contain;
+            object-position: bottom;
+            margin-bottom: 5%;
+            margin-left: auto;
+            margin-right: auto;
+    }
+    
+    
+    
+}
+
+
+
+
+/* tablettes*/
+@media screen and (max-width : 768px){
+    
+
+    body{ 
+        display: flex;
+        background-size: cover;
+        /*background-repeat: no repeat;*/
+        width: 100%;
+        height: auto;
+    }
+
+
+    h1{
+        font-size: 0.7rem;
+        width: 100%;
+
+    }
+
+    p{
+        font-size: 0.7rem;
+
+    }
+
+.form-input-size {
+
+        width: 100%;
+        display: block;
+}
+
+
+    .imgsep{
+            height: 5%;
+            width: 100%;
+            object-fit:contain;
+            object-position: bottom;
+            margin-bottom: 5%;
+            margin-left: auto;
+            margin-right: auto;
+    }
+
+
+    
+}
