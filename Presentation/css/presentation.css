@@ -1,13 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap');
 
 
-
-
-
 /*titres, p et liens*/
 
 
-h1{
+.h1_presentation{
 
     padding-top: 5%;
     text-align: center;
@@ -15,7 +12,7 @@ h1{
     font-family: 'Abhaya Libre';   
 }
 
-h2{
+main h2{
 
     text-align: left;
     font-size: calc(1.5rem + 0.7vw);
@@ -28,7 +25,7 @@ p{
     font-family: 'Abhaya Libre'; 
 }
 
-.lien{
+.lien_presentation{
     outline: none;
     text-decoration: none;
     font-family: 'Abhaya Libre'; 
@@ -36,7 +33,7 @@ p{
     font-weight: bold;
 }
 
-.lien:hover{
+.lien_presentation:hover{
 
     color: #af936c;
     border-bottom: 1px solid;
@@ -46,7 +43,7 @@ p{
 
 /*carroussel*/
 
-.carroussel{
+.carroussel_presentation{
 
     width: 100%;
     height: 100%;
@@ -55,12 +52,10 @@ p{
     
 }
 
-.image1{
+.image1_presentation{
 
     margin: auto;
     width: 50%;
-    
-
 }
 
 
@@ -77,7 +72,7 @@ aside {
     color: #03989e;
 }
 
-.contact{
+.contact_presentation{
 
     font-weight: bold;
 }
@@ -89,12 +84,11 @@ aside {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 3%;
-
 }
 
 /*section 2 & 3*/
 
-.text2,.text3 {
+.text2_presentation,.text3_presentation {
 
     width: 50%;
     margin-right: auto;
@@ -105,55 +99,24 @@ aside {
 
 /*hidden*/
 
-.hidden{
+.hidden_presentation{
     display: none;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.separateur1_presentation{
+    height: 7vh;
+}
 
 /*responsive*/
 
 @media screen and (max-width: 1200px){
 
-
 }
 
 @media screen and (max-width: 992px){
 
-    .image1{
+    .image1_presentation{
         width: 70%;
     }
 
@@ -162,18 +125,16 @@ aside {
         width: 70%;
     }
 
-    .text2,.text3{
+    .text2_presentation,.text3_presentation{
         width: 70%;
     }
-
 }
 
 @media screen and (max-width: 768px){
 
-    .image1{
+    .image1_presentation{
 
         width: 80%;
-
     }
 
     .text_aside{
@@ -186,7 +147,7 @@ aside {
         display: none;
     }
 
-    .hidden{
+    .hidden_presentation{
         display: flex;
         width: 50%;
         margin-right: auto;
@@ -202,7 +163,6 @@ aside {
 
         width: 50%;
         padding-right: 2%;
-
     }
 
     .hid2{
@@ -210,20 +170,17 @@ aside {
         width: 50%;
         padding-left: 2%;
     }
-
-
 }
 
 @media screen and (max-width: 576px){
 
-    .image1{
+    .image1_presentation{
 
         width: 100%;
     }
 
-    .hidden{
+    .hidden_presentation{
 
         width: 70%;
     }
-
 }

@@ -1,6 +1,6 @@
 /*style text*/
 
-.p1,.p2,.p3,.p4{
+.p1_event,.p2_event,.p3_event,.p4_event{
 
     
     font-size: calc(0.7rem + 0.7vw);
@@ -9,13 +9,10 @@
     
 }
 
-
-
-
 /*banniere*/
 
 
-.banniere{  
+.banniere_event{  
     background-image: url(../img/banniere.jpg);
     width: 100%;
     height: 100vh;
@@ -23,13 +20,13 @@
     position: relative;
 }
 
-.bg-color{
+.bg-color_event{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.514);
 
 }
-h1{
+.h1_event{
     
     text-align: center;
     font-size: calc(14rem + 0.7vw);
@@ -44,14 +41,11 @@ h1{
     margin-left: auto;
     margin-right: auto;
     
-
-  
-    
 }
     
 /*separateur1*/
 
-.separateur1{
+.separateur1_event{
 
     height: 20vh;
     background:linear-gradient(#af936c, white);
@@ -60,7 +54,7 @@ h1{
 
 /*h2*/
 
-h2{
+main h2{
     font-size: calc(2rem + 00.7vw);
     font-family: 'Abhaya Libre';
     text-align: center;
@@ -70,7 +64,7 @@ h2{
 
 /*section1*/
 
-.section1{
+.section1_event{
 
     width: 100%;
     height: 50vh;
@@ -78,7 +72,7 @@ h2{
 
 }
 
-.container1{
+.container1_event{
 
     width: 80%;
     height: 100%;
@@ -86,7 +80,7 @@ h2{
     margin-right: auto;
     position: relative;
 }
-.img1{
+.img1_event{
     width: 65%;
     height: auto;
     position: absolute;
@@ -94,7 +88,7 @@ h2{
     padding-right: 15%;
 }
 
-.text1{
+.text1_event{
     position: absolute;
     left: 12vw;
     top: 8vh;
@@ -111,7 +105,7 @@ h2{
     
 /*separateur2*/
 
-.separateur2{
+.separateur2_event{
 
     height: 10vh;
     margin-top: 5vh;
@@ -121,7 +115,7 @@ h2{
 
 /*section2*/
 
-.section2{
+.section2_event{
 
     width: 100%;
     height: 50vh;
@@ -129,7 +123,7 @@ h2{
 
 }
 
-.container2{
+.container2_event{
 
     width: 80%;
     height: 100%;
@@ -137,7 +131,7 @@ h2{
     margin-right: auto;
     position: relative;
 }
-.img2{
+.img2_event{
     width: 65%;
     height: auto;
     position: absolute;
@@ -145,7 +139,7 @@ h2{
     padding-left: 15%;
 }
 
-.text2{
+.text2_event{
     position: absolute;
     right: 12vw;
     top: 8vh;
@@ -161,7 +155,7 @@ h2{
 
 /*separateur3*/
 
-.separateur3{
+.separateur3_event{
 
     height: 10vh;
     margin-top: 5vh;
@@ -172,12 +166,12 @@ h2{
     border-top: groove 30px #03989e;
     padding-top: 2vh;
 }
-.text3{
+.text3_event{
 
     background: linear-gradient(#af936c, white);
 }
 
-.container3{
+.container3_event{
 
     width: 100%;
     height: 100%;
@@ -193,29 +187,12 @@ iframe{
 }
 
 
-/*separateur3*/
+/*separateur4*/
 
-.separateur4{
+.separateur4_event{
 
     height: 20vh;
-    background:linear-gradient(white,#af936c);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -226,7 +203,7 @@ iframe{
 
 
 @media screen and (max-width: 1200px){
-    h1{
+    .h1_event{
         font-size: calc(9rem + 0.7vw);
         top: 50%;
         margin-top: -20%;
@@ -234,25 +211,25 @@ iframe{
         margin-right: auto;
     }
 
-    .text1{
+    .text1_event{
         width: 300px;
         height: 80%;
         border-bottom: ridge 30px #03989e;
         border-left: groove 30px #03989e;
     }
-    .separateur2{
+    .separateur2_event{
         height: 7vh;
         margin-top: 0vh;
     }
 
-    .text2{
+    .text2_event{
         width: 300px;
         height: 80%;
         border-bottom: ridge 30px #03989e;
         border-right: groove 30px #03989e;
     }
 
-    .separateur3{
+    .separateur3_event{
         height: 7vh;
         margin-top: 0vh;
     }
@@ -260,7 +237,7 @@ iframe{
 
 
 @media screen and (max-width: 992px){
-    h1{
+    .h1_event{
         font-size: calc(7rem + 0.7vw);
         top: 50%;
         margin-top: -15%;
@@ -268,22 +245,22 @@ iframe{
         margin-right: auto;
     }
 
-    .section1{
+    .section1_event{
 
         height: 100%;
     }
 
-    .container1{
+    .container1_event{
         display: flex;
         flex-wrap: wrap;
     }
 
-    .img1{
+    .img1_event{
         position: unset;
         padding-right: 0vw;
         width: 100%;
     }
-    .text1{
+    .text1_event{
         flex-direction: column;
         position: unset;
         width: 100%;
@@ -296,22 +273,22 @@ iframe{
 
    
 
-    .section2{
+    .section2_event{
         height: 100%;
         margin-top: 10vh;
     }
 
-    .container2{
+    .container2_event{
         display: flex;
         flex-wrap: wrap;
     }
 
-    .img2{
+    .img2_event{
         position: unset;
         padding-left: 0vw;
         width: 100%;
     }
-    .text2{
+    .text2_event{
         flex-direction: column;
         position: unset;
         width: 100%;
@@ -324,7 +301,7 @@ iframe{
 
    
 
-    .separateur2{
+    .separateur2_event{
         display: none;
     }
 
@@ -332,7 +309,7 @@ iframe{
 
 @media screen and (max-width: 768px){
 
-    h1{
+    .h1_event{
         font-size: calc(5rem + 0.7vw);
         top: 50%;
         margin-top: -15%;
@@ -340,17 +317,17 @@ iframe{
         margin-right: auto;
     }
 
-    .container1{
+    .container1_event{
         display: flex;
         flex-wrap: wrap;
     }
 
-    .img1{
+    .img1_event{
         position: unset;
         padding-right: 0vw;
         width: 100%;
     }
-    .text1{
+    .text1_event{
         flex-direction: column;
         position: unset;
         width: 100%;
@@ -360,17 +337,17 @@ iframe{
         border-bottom: ridge 20px #03989e;
     }
     
-    .container2{
+    .container2_event{
         display: flex;
         flex-wrap: wrap;
     }
 
-    .img2{
+    .img2_event{
         position: unset;
         padding-left: 0vw;
         width: 100%;
     }
-    .text2{
+    .text2_event{
         flex-direction: column;
         position: unset;
         width: 100%;
@@ -380,12 +357,17 @@ iframe{
         border-bottom: ridge 20px #03989e;
     }
 
+    
+.separateur4_event{
+
+    background:linear-gradient(white,#af936c);
+    }
 }
 
 
 @media screen and (max-width: 576px){
 
-    h1{
+    .h1_event{
         font-size: calc(4rem + 0.7vw);
         top: 50%;
         margin-top: -5%;
@@ -398,7 +380,6 @@ iframe{
 
         width: 100%;
     }
-
 }
 
 
@@ -406,16 +387,15 @@ iframe{
 
 @media screen and (max-height: 576px){
 
-    .text1,.text2{
+    .text1_event,.text2_event{
 
-    height: 40vh;
-    
+    height: 40vh;   
     }
 }
 
 @media screen and (max-height: 360px){
 
-    .text1,.text2{
+    .text1_event,.text2_event{
 
     height: 40vh;
 
