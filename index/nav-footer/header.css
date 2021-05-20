@@ -76,6 +76,22 @@ Section Paragraphe
 }
 /*
 =============== 
+Section défilement photo
+===============
+*/
+.boxPhoto{
+    width: 50%;
+    height: calc(5rem + 20vw);
+    max-height: 20rem;
+    margin: 1rem auto;
+    background-color: #000000;
+}
+.boxPhoto img {
+    width: 100%;
+    height: 100%;
+}
+/*
+=============== 
 Section POSTE
 ===============
 */
@@ -200,6 +216,9 @@ Section Média
         align-items: center;
     }
     .carte {
+        width: 100%;
+    }
+    .boxPhoto{
         width: 100%;
     }
 }

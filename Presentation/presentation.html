@@ -7,116 +7,179 @@
     <link rel="stylesheet" href="../reset.css">
     <link rel="stylesheet" href="css/presentation.css">
     <script src="js/jquery-3.6.0.min.js"></script>
-    
-    
+    <link rel="stylesheet" href="../index/nav-footer/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.min.css">
     <title>Parimis - Qui sommes-nous?</title>
 </head>
-
-
-
-
 <body>
-
-
-<main>
-  
-
-
-    <h1>Qui sommes-nous?</h1>
-
-    <section class="carroussel">
-        <img src="img/1.jpg" class = "image1" title="presentation" alt="img">
-    </section>
-
-
-
-    <section class="text_aside">
-        <aside>
-            <h2 class="contact">Contact</h2>
-            <br>
-            <p>
-            Hôtel PARIMIS <br>
-            <br>
-            1, avenue Montaigne <br>
-            75008, Paris <br>
-            FRANCE <br>
-            <br>
-            Standard <br>
-            +33 (1) 49 55 30 00 <br>
-            <br>
-            Réservation <br>
-            +33 (1) 49 55 30 01 <br>
-            <br>
-            <a  class="lien" href="fichiers/brochure-parimis-chambres-suites.pdf" target="_blank">Télécharger la brochure</a> </p>
-        </aside>
-
-
-        <div class="text1">
-            <h2>Une maison historique</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis similique unde atque! Inventore necessitatibus ullam asperiores hic, iure temporibus ratione consequuntur eligendi, non cumque voluptatum, rerum eveniet quibusdam sed nesciunt?</p>
+    <!-- =============== 
+    Section Navbar
+    ===============-->
+    <header id="header">
+        <!-- top -->
+        <section class="topBtn">
+            <a href="#header"><i class="fas fa-chevron-up"></i></a>
+        </section>
+        <!-- logo -->
+        <div class="logo">
+            <a href="/index/nav-footer/index.html">
+                <h1>HOTEL PARIMIS</h1>
+                <h2>PARIS</h2>
+            </a>
         </div>
-    </section>
-
-
-
-    <section class="text2">
-        <h2>Un lieu de prestige et d'excellence</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis similique unde atque! Inventore necessitatibus ullam asperiores hic, iure temporibus ratione consequuntur eligendi, non cumque voluptatum, rerum eveniet quibusdam sed nesciunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae rerum nesciunt temporibus nemo itaque incidunt neque laboriosam. Nulla, ab veniam necessitatibus molestiae optio asperiores recusandae non minima, voluptatibus distinctio qui.</p>
-    </section>
-
-    <section class="text3">
-        <h2>Une équipe d'experts à votre service</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis similique unde atque! Inventore necessitatibus ullam asperiores hic, iure temporibus ratione consequuntur eligendi, non cumque voluptatum, rerum eveniet quibusdam sed nesciunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eaque laudantium provident aperiam voluptas veniam ad quod, nam ipsum assumenda eius incidunt odit eligendi, odio praesentium rerum nesciunt aspernatur necessitatibus.</p>
-    </section>
-
-    <section class="hidden">
-        <div class= "hid1" ><h2>Contact</h2>
-            <br>
-            <p>
-            Hôtel PARIMIS <br>
-            <br>
-            1, avenue Montaigne <br>
-            75008, Paris <br>
-            FRANCE <br>
-        </div>
-
-        <div class="hid2">Standard <br>
-            +33 (1) 49 55 30 00 <br>
-            <br>
-            Réservation <br>
-            +33 (1) 49 55 30 01 <br>
-            <br>
-            <a href="fichiers/brochure-parimis-chambres-suites.pdf" target="_blank">Télécharger la brochure</a> </p>
-        </div>
-        
-            
-            
-    </section>
-</main>
-
-
-
-
-
-<script>
-    $( document ).ready(function() {
-        var i = 1;
-        function changementImage()
-        {
-            i += 1; // on ajoute 1 a i.
-            $('.image1').attr('src', 'img/' + i+'.jpg');
-            console.info(i+'.jpg');
-            if(i === 6)
-            {
-                i = 0; // on repart a 0.
-                changementImage(); // ici je demande à la fonction de se relancer
-            }
-            //if(i === 10) clearInterval(timer); // on arrete le carousel.	
-        }
-        var timer = setInterval(changementImage, 5000); // on appelle la fonction changementImage() toutes les 2 secondes    
-    })
+        <ul class="lienNav">
+            <li><a href="#">CHAMBRES</a></li>
+            <li><a href="#">RESTAURANT</a></li>
+            <li><a href="#">SPA & FITNESS</a></li>
+            <li><a href="#">ACTUALITÉS</a></li>
+            <li><a href="#">ÉVÉNEMENTS</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#" class="lienReservation">RÉSERVATION</a></li>
+        </ul>
+        <div class="autreNav">
+            <div class="lang">
+                <span><a href="#">FR</a></span>
+                <span>|</span>
+                <span><a href="#">EN</a></span>
+            </div>
+            <div class="panier">
+                <a href="#">MON PANIER <i class="fas fa-store-alt"></i></a>
+            </div>
+            <div class="recherche">
+                <input type="search" placeholder="Recherche">
+            </div>
     
-</script>
+        </div>
 
+        <!-- MENU HUMBERGER -->
+        <i class="fas fa-bars" id="openMenu"></i>
+    </header>
+    <!-- DROP MENU -->
+    <section id="menuBurger">
+         <div class="dropMenu">
+            <i class="far fa-times-circle" id="closeMenu"></i>
 
+            <ul class="itemDropMenu">
+                <li><a href="#">CHAMBRES</a></li>
+                <li><a href="#">RESTAURANT</a></li>
+                <li><a href="#">SPA & FITNESS</a></li>
+                <li><a href="#">ACTUALITÉS</a></li>
+                <li><a href="#">ÉVÉNEMENTS</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">RÉSERVATION</a></li>
+            </ul> 
+        </div>
+    </section>
+    <!-- =============== 
+        Section Main
+        ===============-->
+    <main>
+        <h1>Qui sommes-nous?</h1>
+
+        <section class="carroussel">
+            <img src="img/1.jpg" class = "image1" title="presentation" alt="img">
+        </section>
+
+        <section class="text_aside">
+            <aside>
+                <h2 class="contact">Contact</h2>
+                <br>
+                <p>
+                Hôtel PARIMIS <br>
+                <br>
+                1, avenue Montaigne <br>
+                75008, Paris <br>
+                FRANCE <br>
+                <br>
+                Standard <br>
+                +33 (1) 49 55 30 00 <br>
+                <br>
+                Réservation <br>
+                +33 (1) 49 55 30 01 <br>
+                <br>
+                <a  class="lien" href="fichiers/brochure-parimis-chambres-suites.pdf" target="_blank">Télécharger la brochure</a> </p>
+            </aside>
+
+            <div class="text1">
+                <h2>Une maison historique</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis similique unde atque! Inventore necessitatibus ullam asperiores hic, iure temporibus ratione consequuntur eligendi, non cumque voluptatum, rerum eveniet quibusdam sed nesciunt?</p>
+            </div>
+        </section>
+
+        <section class="text2">
+            <h2>Un lieu de prestige et d'excellence</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis similique unde atque! Inventore necessitatibus ullam asperiores hic, iure temporibus ratione consequuntur eligendi, non cumque voluptatum, rerum eveniet quibusdam sed nesciunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae rerum nesciunt temporibus nemo itaque incidunt neque laboriosam. Nulla, ab veniam necessitatibus molestiae optio asperiores recusandae non minima, voluptatibus distinctio qui.</p>
+        </section>
+
+        <section class="text3">
+            <h2>Une équipe d'experts à votre service</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis similique unde atque! Inventore necessitatibus ullam asperiores hic, iure temporibus ratione consequuntur eligendi, non cumque voluptatum, rerum eveniet quibusdam sed nesciunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eaque laudantium provident aperiam voluptas veniam ad quod, nam ipsum assumenda eius incidunt odit eligendi, odio praesentium rerum nesciunt aspernatur necessitatibus.</p>
+        </section>
+
+        <section class="hidden">
+            <div class= "hid1" ><h2>Contact</h2>
+                <br>
+                <p>
+                Hôtel PARIMIS <br>
+                <br>
+                1, avenue Montaigne <br>
+                75008, Paris <br>
+                FRANCE <br>
+            </div>
+
+            <div class="hid2">Standard <br>
+                +33 (1) 49 55 30 00 <br>
+                <br>
+                Réservation <br>
+                +33 (1) 49 55 30 01 <br>
+                <br>
+                <a href="fichiers/brochure-parimis-chambres-suites.pdf" target="_blank">Télécharger la brochure</a> </p>
+            </div>
+                    
+        </section>
+    </main>
+    <!-- =============== 
+    Section Footer
+    ===============-->
+    <footer class="footer">
+        <div class="lienFooter">
+            <ul class="itemLienFooter">
+                <li><a href="#">Recrutement</a></li> 
+                <li><a href="#">Presse</a></li>
+                <li><a href="../../Avis/avis.html">Avis</a></li>
+                <li><a href="#">Qui somme-nous ?</a></li>
+                <li><a href="#">Plan du site</a></li>
+                <li><a href="#">Accès</a></li>
+            </ul>
+        </div>
+        <div class="logoPartageFooter">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+
+        <p>HOTEL PARIMIS PARIS | 1 avenue Montaigne, 75008 Paris | RESERVATION : +33 404404 </p>
+        <p class="legal">@2021 HOTEL PARIMIS PARIS | <a href="#">Mention-légal</a> <a href="#"> CGV</a></i><a href="javascript:window.print()"><i class="fas fa-print"></i></a></p>
+
+    </footer>
+    
+    <script src="../index/nav-footer/menu.js"></script>
+    <script>
+        $( document ).ready(function() {
+            var i = 1;
+            function changementImage()
+            {
+                i += 1; // on ajoute 1 a i.
+                $('.image1').attr('src', 'img/' + i+'.jpg');
+                console.info(i+'.jpg');
+                if(i === 6)
+                {
+                    i = 0; // on repart a 0.
+                    changementImage(); // ici je demande à la fonction de se relancer
+                }
+                //if(i === 10) clearInterval(timer); // on arrete le carousel.	
+            }
+            var timer = setInterval(changementImage, 5000); // on appelle la fonction changementImage() toutes les 2 secondes    
+        }) 
+    </script>
 </body>
