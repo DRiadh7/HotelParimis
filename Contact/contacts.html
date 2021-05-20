@@ -21,6 +21,7 @@
     Section Navbar
     ===============-->
     <!-- top -->
+
     <section class="topBtn">
         <a href="#header"><i class="fas fa-chevron-up"></i></a>
     </section>
@@ -77,22 +78,19 @@
         </div>
     </section>
 
+    </header>
 
+    <!-- =============== 
+        Section Main
+        ===============-->
     <main>
-        <header>
         <img src="Deco_sep/1.png" alt="separateur arabesque" class="imgsep">
-        <div class="titre-principal">
-        <h1>CONTACT</h1>
-        </div>
-        </header>
+        <h1 class="titreForm">CONTACT</h1> 
         <img src="Deco_sep/2.png" alt="separateur arabesque" class="imgsep">
 
-        <p>Pour toutes informations complémentaires, veuillez renseigner ci-dessous:</p>
-
-        <div class="form-contact">
-            <form id="form" method="post" action="" enctype="">
-
-                <div class="form-input">
+        <form action="" class="form"> 
+            <div class="flex">
+                <div class="civility">
                     <select id="civility" name="civility">
                         <optgroup label="Civilité">
                             <option value="1">Civilité*</option>
@@ -101,54 +99,42 @@
                         </optgroup>
                     </select>
                 </div>
-
-                <br>
-
-                <div class="form-input">
-                    <!--<label for="name">votre nom</label>-->
+                <div class="name"> <!--class name-->
+                    <label for="name">Nom :</label>
                     <input type="text" for="name" id="name" name="name" placeholder="Nom*" required>
+                    <p class="errorForm">lorem</p> <!--class errorForm-->
                 </div>
-
-                <br>
-
-                <div class="form-input">
-                    <!--<label for="fname">votre prénom</label>-->
+                <div class="fname"> <!--class fname-->
+                    <label for="fname">Prenom :</label>
                     <input type="text" for="fname" id="fname" name="fname" placeholder="Prénom*" required>
+                    <p class="errorForm">lorem</p>
                 </div>
-
-
-                <br>
-
-                <div class="form-input">
-                    <!--<label for="firm">le nom de votre entreprise:</label>-->
+            </div>
+            <div class="flex">
+                <div class="firm">
+                    <label for="firm">Le nom de votre entreprise :</label>
                     <input type="text" for="firm" id="firm" name="firm" placeholder="Nom de votre entreprise*" required>
                 </div>
-
-                <br>
-
-                <div class="form-input">
-                    <!--<label for="email">votre email</label>-->
+                <div class="email"> <!--class email-->
+                    <label for="">Email :</label>
                     <input type="email" for="email" name="email" placeholder="x@gmail.com*" required>
                 </div>
-
-                <br>
-
-                <div class="form-input">
-                    <!--<label for="country">votre pays de résidence actuel</label>-->
+            </div>
+                
+            <div class="flex">
+                <div class="country"> <!--class country-->
+                    <label for="country">votre pays de résidence actuel :</label>
                     <input type="country" for="country" id="country" name="country" placeholder="Pays*" required>
                 </div>
-
-                <br></br>
-
-                <div class="form-input">
-                    <!--<label for="topic">Veuillez préciser le motif/objet de votre prise de contact.</label>-->
-                    <p>Veuillez préciser le motif/objet de votre prise de contact.</p>
-                    <input type="topic" for="topic" id="topic" name="topic" required>
+                <div class="topic">
+                        <label for="topic">Veuillez préciser le motif/objet de votre prise de contact.</label>
+                        <input type="topic" for="topic" id="topic" name="topic" required>
                 </div>
-
-                <div class="form-input">
+            </div>
+            <div class="flex">
+                <div class="cat">
                     <p>Je souhaite vous contacter au sujet:</p>
-                    <select id="cat" class="form-input-size" name="cat">
+                    <select id="cat" name="cat">
                         <optgroup label="Catégorie">
                             <option value="bedrooms">des prestations Chambres</option>
                             <option value="restaurant">du service Restaurant</option>
@@ -157,85 +143,76 @@
                         </optgroup>
                     </select>
                 </div>
-
-                <br></br>
-
-
-                <!--<label for="message">Votre message:</label>-->
-
-                <div class="form-input">
+            </div>
+            <div class="flex">
+                <div class="message"> <!--class Message--->
+                    <label for="">Message :</label>
                     <textarea id="message" name="message" rows="10" cols="100"
-                        onkeyup="javascript:MaxLengthTextarea(this, 1000);" placeholder="Laissez-nous un message*"
-                        required></textarea>
+                    onkeyup="javascript:MaxLengthTextarea(this, 1000);" placeholder="Laissez-nous un message*"
+                    required></textarea>
                 </div>
-                <br>
-                <div class="form-input">
-                    <input type="submit" for="submit" id="submit" name="submit" value="Envoyer">
+            </div>
+            <button type="submit" class="btnFormEnvoi">Envoyer</button> <!--class btnFormEnvoi-->
+            <!--<input type="submit" for="submit" id="submit" name="submit" value="Envoyer">-->
+            <button type="reset" class="btnFormReset">Recommencer</button>
+            <!--<input type="reset" for="reset" id="reset" name="reset" name="reset" value="Recommencer">-->
 
-                    <input type="reset" for="reset" id="reset" name="reset" name="reset" value="Recommencer">
-                </div>
-
-
-            </form>
-
-        </div>
-
-
-
+        </form>
     </main>
 
 
+
     <footer class="footer">
-            <div class="lienFooter">
-                <ul class="itemLienFooter">
-                    <li><a href="#">Recrutement</a></li>
-                    <li><a href="#">Presse</a></li>
-                    <li><a href="#">Avis</a></li>
-                    <li><a href="#">Qui somme-nous ?</a></li>
-                    <li><a href="#">Plan du site</a></li>
-                    <li><a href="#">Accès</a></li>
-                </ul>
-            </div>
-            <div class="logoPartageFooter">
-                <a href="#"><i class="fab fa-facebook-square"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-            </div>
-    
-            <p>HOTEL PARIMIS PARIS | 1 avenue Montaigne, 75008 Paris | RESERVATION : +33 404404 </p>
-            <p class="legal">@2021 HOTEL PARIMIS PARIS | <a href="#">Mentions-légales</a> <a href="#">CGV</a><i
-                    class="fas fa-print"></i></p>
-    
-        </footer>
-    
-        <script src="/index/nav-footer/menu.js"></script>
+        <div class="lienFooter">
+            <ul class="itemLienFooter">
+                <li><a href="#">Recrutement</a></li>
+                <li><a href="#">Presse</a></li>
+                <li><a href="#">Avis</a></li>
+                <li><a href="#">Qui sommes-nous ?</a></li>
+                <li><a href="#">Plan du site</a></li>
+                <li><a href="#">Accès</a></li>
+            </ul>
+        </div>
+        <div class="logoPartageFooter">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+
+        <p>HOTEL PARIMIS PARIS | 1 avenue Montaigne, 75008 Paris | RESERVATION : +33 404404 </p>
+        <p class="legal">@2021 HOTEL PARIMIS PARIS | <a href="#">Mentions-légales</a> <a href="#">CGV</a><i
+                class="fas fa-print"></i></p>
+
+    </footer>
+
+    <script src="/index/nav-footer/menu.js"></script>
 
 
 
-        <script>
-            function validateEmail(email) { /*fonction js pour vérifier si l'email saisi est valide*/
-                var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
-                return re.test(email);
+    <script>
+        function validateEmail(email) { /*fonction js pour vérifier si l'email saisi est valide*/
+            var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+            return re.test(email);
+        }
+
+        function Verification() {
+            // Récupérer la valeur des champs nom prénom et email
+            var Nom = document.getElementById('name').value;
+            var Prénom = document.getElementById('fname').value;
+            var Email = document.getElementById('email').value;
+        }
+
+
+        function MaxLengthTextarea(objettextarea, maxlength) {/*Fonction Javascript pour limiter la saisie de car dans le textarea*/
+            if (objettextarea.value.length > maxlength) {
+                objettextarea.value = objettextarea.value.substring(0, maxlength);
+                alert('Votre texte ne doit pas dépasser ' + maxlength + ' caractères!');
             }
-
-            function Verification() {
-                // Récupérer la valeur des champs nom prénom et email
-                var Nom = document.getElementById('name').value;
-                var Prénom = document.getElementById('fname').value;
-                var Email = document.getElementById('email').value;
-            }
-
-
-            function MaxLengthTextarea(objettextarea, maxlength) {/*Fonction Javascript pour limiter la saisie de car dans le textarea*/
-                if (objettextarea.value.length > maxlength) {
-                    objettextarea.value = objettextarea.value.substring(0, maxlength);
-                    alert('Votre texte ne doit pas dépasser ' + maxlength + ' caractères!');
-                }
-            }
+        }
 
 
 
-        </script>
+    </script>
 
 
 

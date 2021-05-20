@@ -6,80 +6,41 @@ Fonts
 
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Pattaya&display=swap');
 
+/*
+=============== 
+Variables
+===============
+*/
+/*  color: var(--clr-primary); */
+:root {
+    --clr-white: #ffffff;
+    --clr-black: #000000;
+    --clr-grey: #e7e7e7;
+    --clr-dropMenu: #030303;
+    --clr-dore: #af936c;
+    --clr-turquoise: #03989e;
 
+}
 /*
 =============== 
 Global css
 ===============
 */
-/*body{
-    line-height: 1.5em;
-    letter-spacing: 1px;
-    margin: 0; /*117px;*/
-    padding-left: 40px;
-    box-sizing: border-box;
-    /*background-image: linear-gradient(to right, rgb(160, 147, 129), white, rgb(36, 65, 77) );
-    background-position: center;
-    background-repeat: repeat repeat;
-    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
-    background-size: cover; /* version standardisée */
-    /*Je souhaitais mettre une texture en fond mais je n'ai pas réussi à l'adapter à la taille de l'écran du navigateur*/
-
-
-}*/
-
-h1, h2, p{
-
-    font-family: 'Abhaya Libre', serif; /*typo police choisie pour l'ensemble du site*/
+*{
+    font-family: 'Abhaya Libre', serif;
     
-    }
-
-    .titre-principal h1 {
-        text-align: center;
-        margin-bottom: 30px;
-        font-weight: bold;
-        font-size: calc(1.5rem + 0.7vw); /*taille des titres h1, cette propriété permet de fixer une valeur dite responsive*/
-    }
-
-
-    .form-contact{
-        width: 50%;
-        margin: 3.2rem auto 0 auto;
-        /*display: inline;
-        text-align: center; /*centre le formulaire
-        width: 100%;
-        font-size: calc(1rem + 0.7vw);*/
-    }
-
-
-    #form{
-        background: rgba(6, 94, 60, 0.178);
-        padding: 2.3rem 0.5rem;
-        border-radius: 5.3rem;
-        margin: 2%;
-    }
-
-    .form-input input, #civility{
-        
-        padding: 0.5rem;
-        width: 50%;
-        margin: 1.5rem;
-    }
-
-    .form-input-size{
-        display: block;
-        width: 40%;
-        height: 1.5rem;
-        padding: 0.3rem 0.4rem;
-        border-radius: 0.2rem;
-        /*outline: 0;*/
-        border-style: none;
-        margin-top: 0.4rem;
-        text-align: center;
-    }
-
-
-
+}
+/*
+=============== 
+Section Main 
+===============
+*/
+.titreForm{
+    text-align: center;
+    margin: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 
 
 .imgsep{
@@ -93,30 +54,113 @@ h1, h2, p{
     }
 
 
-p{
-    font-size: 1.12rem;
-    text-align: center, justify;
-    margin-right: 25%;
-    padding-left: 20%;
-}
 
-label {
+.form{
+    width: 30rem;
+    margin: 0 auto;
+    background-color: #7a6b6b71;
     display: flex;
-    align-items: center;
-    font-size: 1.125rem;
+    flex-direction: column;
+    border-radius: 1rem;
+}
+.flex {
+    display: flex;
     margin-bottom: 0.5rem;
 }
-
-
-#message{ /*Textarea responsive*/
-
-    width: 90%;
-    height: 10rem;
+.civility, .name, .fname, .firm, .email, .country, .topic, .cat, .message{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+}
+.form input{
     padding: 0.5rem;
+    border: none;
+}
+.form label{
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+.btnFormEnvoi, .btnFormReset{
+    padding: 0.5rem;
+    margin: 0 auto;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+.btnFormEnvoi:hover, .btnFormReset:hover{
+    background-color: var(--clr-dore);
+}
+
+.errorForm{
+    color: crimson;
+    font-weight: bold;
+    display: none;
+}
+
+#message{
+    width: 100%;
+    min-height: 20vh;
+    border: none;
+    padding: 0.5rem;
+}
+@media screen and (max-width : 576px){
+    .flex {
+        flex-direction: column;
+    }
+    .form {
+        width: 90%;
+
+    }
+
+    .imgsep{
+        height: 5%;
+        width: 100%;
+        object-fit:contain;
+        object-position: bottom;
+        margin-bottom: 5%;
+        margin-left: auto;
+        margin-right: auto;
+}
+
 
 }
 
-#submit, #reset{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*#submit, #reset{
     margin-top: 5%;
     margin-right: 40%;
     margin-left: 25%;
@@ -128,103 +172,6 @@ label {
     cursor: pointer;
     border: none;
 
-}
+}*/
 
 
-    /****************************RESPONSIVE******************************/
-
-/* On part du réglage mobile first donc smartphone */
-
-
-/* smartphone en paysage */
-
-@media screen and (max-width : 576px) {
-    
-    body{ 
-        display: flex;
-        background-size: cover;
-        /*background-repeat: no repeat;*/
-        width: 100%;
-        height: auto;
-    }
-
-
-    h1{
-        font-size: calc(2rem + 1.5vw);
-        width: 100%;
-
-    }
-
-    p{
-        font-size: 1rem;
-
-    }
-
-.form-input-size {
-
-        width: 100%;
-        display: block;
-}
-
-
-    .imgsep{
-            height: 5%;
-            width: 100%;
-            object-fit:contain;
-            object-position: bottom;
-            margin-bottom: 5%;
-            margin-left: auto;
-            margin-right: auto;
-    }
-    
-    
-    
-}
-
-
-
-
-/* tablettes*/
-@media screen and (max-width : 768px){
-    
-
-    body{ 
-        display: flex;
-        background-size: cover;
-        /*background-repeat: no repeat;*/
-        width: 100%;
-        height: auto;
-    }
-
-
-    h1{
-        font-size: 0.7rem;
-        width: 100%;
-
-    }
-
-    p{
-        font-size: 0.7rem;
-
-    }
-
-.form-input-size {
-
-        width: 100%;
-        display: block;
-}
-
-
-    .imgsep{
-            height: 5%;
-            width: 100%;
-            object-fit:contain;
-            object-position: bottom;
-            margin-bottom: 5%;
-            margin-left: auto;
-            margin-right: auto;
-    }
-
-
-    
-}
