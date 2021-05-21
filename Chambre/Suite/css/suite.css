@@ -60,17 +60,17 @@ main h2{
     margin-bottom: 0.5em;
 }
 
-h3{
+main h3{
     font-size: calc(1rem + 0.7vw);
     text-align: center;
     margin: 0.3em auto;
 }
 
-p{
+main p{
     font-size: calc(0.6rem + 0.7vw);
 }
 
-li{
+main li{
     font-size: calc(0.6rem + 0.7vw);
     list-style: inside;
 }
@@ -273,5 +273,9 @@ Responsive ...
 @media screen and (max-width: 576px){    
     .bouton-reserver {
         font-size: calc(1rem + 0.7vw);
+    }
+
+    .equipement{
+        height: 20vh;
     }
 }
