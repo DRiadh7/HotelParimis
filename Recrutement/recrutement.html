@@ -79,31 +79,31 @@
         <main>
             <h1 class="titreFormRecrutement">FORMULAIRE DE RECRUTEMENT</h1>
     
-            <form action="" class="formRecrutement">
+            <form action="GET" class="formRecrutement">
                 <div class="flex">
                     <div class="nomRecrutement">
-                        <label for="">Nom : *</label>
-                        <input type="text" name="" id="" required>
+                        <label for="FnomRecrutement">Nom : *</label>
+                        <input type="text" name="FnomRecrutement" id="FnomRecrutement" required>
                     </div>
                     <div class="prenomRecrutement">
-                        <label for="">Prenom : *</label>
-                        <input type="text" name="" id="" required>
+                        <label for="FprenomRecrutement">Prenom : *</label>
+                        <input type="text" name="FprenomRecrutement" id="FprenomRecrutement" required>
                     </div>
                 </div>
                 <div class="flex">
                     <div class="emailRecrutement">
-                        <label for="">Email : *</label>
-                        <input type="email" name="" id="" required>
+                        <label for="FemailRecrutement">Email : *</label>
+                        <input type="email" name="FemailRecrutement" id="FemailRecrutement" required>
                     </div>
                     <div class="telRecrutement">
-                        <label for="">Téléphone : *</label>
-                        <input type="tel" name="" id="" required>
+                        <label for="FtelRecrutement">Téléphone : *</label>
+                        <input type="tel" name="FtelRecrutement" id="FtelRecrutement" required>
                     </div>
                 </div>
                 <div class="flex">
                     <div class="nbPersonne">
-                        <label for="">Pays : *</label>
-                        <select id="chambre" name="chambre" required>
+                        <label for="FpaysRecrutement">Pays : *</label>
+                        <select id="FpaysRecrutement" name="FpaysRecrutement" required>
                             <option value="GCQ">France</option>
                             <option value="GC">Japon</option>
                         </select>
@@ -111,27 +111,27 @@
                     <div class="gammeRecrutement">
                         <label for="chambre">Poste: *</label>
                         <select id="chambre" name="chambre" required>
-                            <option value="GCQ">Gamme Classique</option>
-                            <option value="GC">Gamme Confort</option>
-                            <option value="GD">Gamme Deluxe</option>
-                            <option value="GS">Gamme Suite</option>
+                            <option value="GCQ">Intégrateur web</option>
+                            <option value="GC">Front-end Developer</option>
+                            <option value="GD">Back-end Developer</option>
+                            <option value="GS">Stage</option>
                         </select>
                     </div>
                 </div>
                 <div class="flex">
                     <div class="dateArriveRecrutement">
-                        <label for="">CV : *</label>
-                        <input type="file" name="" id="" class="file" required>
+                        <label for="FcvRecrutement">CV : *</label>
+                        <input type="file" name="FcvRecrutement" id="FcvRecrutement" class="file" required>
                     </div>
                     <div class="dateDepartRecrutement">
-                        <label for="">lettre de motivation : *</label>
-                        <input type="file" name="" id="" class="file" required>
+                        <label for="FlmRecrutement">lettre de motivation : *</label>
+                        <input type="file" name="FlmRecrutement" id="FlmRecrutement" class="file" required>
                     </div>
                 </div>
                 <div class="flex">
                     <div class="ta">
-                        <label for="">Message : *</label>
-                        <textarea name="" id="taRecrutement" required></textarea>
+                        <label for="FtaRecrutement">Message : *</label>
+                        <textarea name="FtaRecrutement" id="taRecrutement" required></textarea>
                     </div>
                 </div>
                 <button type="submit" class="btnFormRecrutement">Envoyer</button>
