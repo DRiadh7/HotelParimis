@@ -29,6 +29,10 @@ Global css
     font-family: 'Abhaya Libre', serif;
 }
 
+main{
+    margin-bottom: 5vh;
+}
+
 /*
 =============== 
 Animation
@@ -40,17 +44,20 @@ Animation
 Section ...
 ===============
 */
-a{ 
+
+/*Généralités*/
+
+main a{ 
     text-decoration:none;
     color: var(--clr-white);
 }
 
-h1{
+main h1{
     font-size: calc(3rem + 0.7vw);
     text-align: center;
 }
 
-h2{
+main h2{
     font-size: calc(2rem + 0.7vw);
 }
 
@@ -58,6 +65,7 @@ p{
     font-size: calc(0.6rem + 0.7vw);
 }
 
+/*Image de fond*/
 .image-fond{
     height: 60vh;
     background-image: url("../img/suite-vue-tour-eiffel.jpg");
@@ -65,12 +73,14 @@ p{
     background-position: center;
 }
 
+/*Présentation catégorie Chambre*/
 .presentation{
     padding: 0 15%;
     margin-top: 30px;
     margin-bottom: 70px;
 }
 
+/*Chambres Classique et Deluxe*/
 .container1{
     display: flex;
 }
@@ -83,6 +93,7 @@ p{
     padding: 0 5%;
 }
 
+/*Chambre Confort et Suite*/
 .container2{
     display: flex;
 }
@@ -95,12 +106,14 @@ p{
     padding: 0 5%;
 }
 
+/*Images chambres et suite*/
 .img1{
     display: flex;
     width: 50%;
     height: 50%;
 }
 
+/*Boutons*/
 .bouton{
     background-color: var(--clr-turquoise);
     color: var(--clr-white);
@@ -110,6 +123,7 @@ p{
     border-radius: 10px;
 }
 
+/*Capacité chambres*/
 .icon{
     display: flex;
 }

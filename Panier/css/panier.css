@@ -40,6 +40,8 @@ Animation
 Section ...
 ===============
 */
+/*Contenu du panier*/
+
 .panier-paiement {
     display: flex;
     width: 55%;
@@ -58,6 +60,8 @@ Section ...
     color: var(--clr-dore);
     padding: 1em;
 }
+
+/*Encart paiement*/
 
 .prix-panier {
     width: 45%;

@@ -40,29 +40,38 @@ Animation
 Section ...
 ===============
 */
-h1{
+main h1{
+    font-size: calc(3rem + 0.7vw);
     text-align: center;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin: 1em 15%;
 }
 
-h2{
-    margin-left: 15%;
-    margin-right: 15%;
+main h2{
+    font-size: calc(2rem + 0.7vw);
+    margin: 0.5em 15%;
+    padding-left: 0.2em;
 }
 
-h3{
-    margin-left: 15%;
-    margin-right: 15%;
+main h3{
+    font-size: calc(1rem + 0.7vw);
+    margin: 0.5em 15%;
+    padding-left: 0.4em;
 }
 
-p{
+main p{
+    font-size: calc(0.6rem + 0.7vw);
     margin-left: 15%;
     margin-right: 15%;
     text-align: justify;
+    padding: 0.5em;
+    line-height: normal;
 }
 
-li{
+main ul{
+    font-size: calc(0.6rem + 0.7vw);
+    line-height: normal;
+    list-style: inside;
     margin-left: 15%;
     margin-right: 15%;
+    padding-left: 2em;
 }
