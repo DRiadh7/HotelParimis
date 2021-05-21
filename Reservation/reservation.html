@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../reset.css">
     <link rel="stylesheet" href="reservation.css">
     <link rel="stylesheet" href="../index/nav-footer/style.css">
-    <link rel="shortcut icon" href="/index/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../index/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.min.css">
 </head>
 
@@ -83,34 +83,34 @@
         <form action="" class="formReservation">
             <div class="flex">
                 <div class="nomReservation">
-                    <label for="">Nom : *</label>
-                    <input type="text" name="" id="">
+                    <label for="FnomReservation">Nom : *</label>
+                    <input type="text" name="FnomReservation" id="FnomReservation" required>
                     <p class="errorFormReservation">lorem</p>
                 </div>
                 <div class="prenomReservation">
-                    <label for="">Prenom : *</label>
-                    <input type="text" name="" id="">
+                    <label for="FprenomReservation">Prenom : *</label>
+                    <input type="text" name="FprenomReservation" id="FprenomReservation" required>
                     <p class="errorFormReservation">lorem</p>
                 </div>
             </div>
             <div class="flex">
                 <div class="emailReservation">
-                    <label for="">Email : *</label>
-                    <input type="email" name="" id="">
+                    <label for="FemailReservation">Email : *</label>
+                    <input type="email" name="FemailReservation" id="FemailReservation" required>
                 </div>
                 <div class="telReservation">
-                    <label for="">Téléphone : *</label>
-                    <input type="tel" name="" id="">
+                    <label for="FtelReservation">Téléphone : *</label>
+                    <input type="tel" name="FtelReservation" id="FtelReservation" required>
                 </div>
             </div>
             <div class="flex">
                 <div class="nbPersonne">
-                    <label for="">Nombres de Personne : *</label>
-                    <input type="number" name="" id="">
+                    <label for="FPersonneReservation">Nombres de Personne : *</label>
+                    <input type="number" name="FPersonneReservation" id="FPersonneReservation" required>
                 </div>
                 <div class="gammeReservation">
                     <label for="chambre">Gamme chambres: *</label>
-                    <select id="chambre" name="chambre">
+                    <select id="chambre" name="chambre" required>
                         <option value="GCQ">Gamme Classique</option>
                         <option value="GC">Gamme Confort</option>
                         <option value="GD">Gamme Deluxe</option>
@@ -120,12 +120,12 @@
             </div>
             <div class="flex">
                 <div class="dateArriveReservation">
-                    <label for="">Date d'arrivée : *</label>
-                    <input type="date" name="" id="">
+                    <label for="FdaReservation">Date d'arrivée : *</label>
+                    <input type="date" name="FdaReservation" id="FdaReservation" required>
                 </div>
                 <div class="dateDepartReservation">
-                    <label for="">Date de départ : *</label>
-                    <input type="date" name="" id="">
+                    <label for="FddReservation">Date de départ : *</label>
+                    <input type="date" name="FddReservation" id="FddReservation" required>
                 </div>
             </div>
                
