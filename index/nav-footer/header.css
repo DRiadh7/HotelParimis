@@ -123,6 +123,7 @@ Section POSTE
     padding: 1rem;
     margin-top: 0.5rem;
     margin-left: 0.5rem;
+    
 }
 .btnMainPoste {
     background-color: var(--clr-turquoise);
