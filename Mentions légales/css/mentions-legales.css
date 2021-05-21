@@ -29,6 +29,11 @@ Global css
     font-family: 'Abhaya Libre', serif;
 }
 
+main{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
 /*
 =============== 
 Animation

@@ -33,11 +33,19 @@ a {
     text-decoration: none;
     color: var(--clr-black);
 }
+
+main{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
 /*
 =============== 
 Section Plan du site
 ===============
 */
+
+
 .planSiteLienMain {
     text-align: center;
     margin: 0 auto;
