@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../index/img/favicon.ico" type="image/x-icon">
     <title>Page Contact du site PARIMIS</title>
     <link rel="stylesheet" href="reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap" rel="stylesheet">
     <!--choix de notre police d'écriture-->
     <link rel="stylesheet" href="contacts.css">
     <link rel="stylesheet" href="../index/nav-footer/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-
 </head>
-
-
 <body>
     <!-- =============== 
     Section Navbar
@@ -26,7 +24,6 @@
         <a href="#header"><i class="fas fa-chevron-up"></i></a>
     </section>
     <header id="header">
-
         <div class="logo">
             <a href="../index/nav-footer/index.html">
                 <h1>HOTEL PARIMIS</h1>
@@ -77,9 +74,6 @@
             </ul>
         </div>
     </section>
-
-    </header>
-
     <!-- =============== 
         Section Main
         ===============-->
@@ -91,7 +85,8 @@
         <form action="" class="form"> 
             <div class="flex">
                 <div class="civility">
-                    <select id="civility" name="civility">
+                    <label for="civility">Civilité : *</label>
+                    <select id="civility" name="civility" required>
                         <optgroup label="Civilité">
                             <option value="1">Civilité*</option>
                             <option value="2">Mr.</option>
@@ -100,55 +95,53 @@
                     </select>
                 </div>
                 <div class="name"> <!--class name-->
-                    <label for="name">Nom :</label>
-                    <input type="text" for="name" id="name" name="name" placeholder="Nom*" required>
-                    <p class="errorForm">lorem</p> <!--class errorForm-->
+                    <label for="name">Nom : *</label>
+                    <input type="text" for="name" id="name" name="name" placeholder="Nom" required>
                 </div>
                 <div class="fname"> <!--class fname-->
-                    <label for="fname">Prenom :</label>
-                    <input type="text" for="fname" id="fname" name="fname" placeholder="Prénom*" required>
-                    <p class="errorForm">lorem</p>
+                    <label for="fname">Prenom : *</label>
+                    <input type="text" for="fname" id="fname" name="fname" placeholder="Prénom" required>
                 </div>
             </div>
             <div class="flex">
                 <div class="firm">
                     <label for="firm">Le nom de votre entreprise :</label>
-                    <input type="text" for="firm" id="firm" name="firm" placeholder="Nom de votre entreprise*" required>
+                    <input type="text" for="firm" id="firm" name="firm" placeholder="Nom de votre entreprise">
                 </div>
                 <div class="email"> <!--class email-->
-                    <label for="">Email :</label>
-                    <input type="email" for="email" name="email" placeholder="x@gmail.com*" required>
+                    <label for="email">Email : *</label>
+                    <input type="email" for="email" name="email" placeholder="x@gmail.com" required>
                 </div>
             </div>
                 
             <div class="flex">
                 <div class="country"> <!--class country-->
-                    <label for="country">votre pays de résidence actuel :</label>
-                    <input type="country" for="country" id="country" name="country" placeholder="Pays*" required>
+                    <label for="country">Votre pays de résidence actuel : *</label>
+                    <input type="country" for="country" id="country" name="country" placeholder="Pays" required>
                 </div>
                 <div class="topic">
-                        <label for="topic">Veuillez préciser le motif/objet de votre prise de contact.</label>
+                        <label for="topic">Veuillez préciser le motif/objet de votre prise de contact : *</label>
                         <input type="topic" for="topic" id="topic" name="topic" required>
                 </div>
             </div>
             <div class="flex">
                 <div class="cat">
-                    <p>Je souhaite vous contacter au sujet:</p>
-                    <select id="cat" name="cat">
+                    <p>Je souhaite vous contacter au sujet : *</p>
+                    <select id="cat" name="cat" required>
                         <optgroup label="Catégorie">
-                            <option value="bedrooms">des prestations Chambres</option>
-                            <option value="restaurant">du service Restaurant</option>
-                            <option value="spa">du service Spa</option>
-                            <option value="general">d'Ordre général</option>
+                            <option value="bedrooms">Prestations Chambres</option>
+                            <option value="restaurant">Service Restaurant</option>
+                            <option value="spa">Service Spa</option>
+                            <option value="autre">Autres</option>
                         </optgroup>
                     </select>
                 </div>
             </div>
             <div class="flex">
-                <div class="message"> <!--class Message--->
-                    <label for="">Message :</label>
+                <div class="message">
+                    <label for="message">Message : *</label>
                     <textarea id="message" name="message" rows="10" cols="100"
-                    onkeyup="javascript:MaxLengthTextarea(this, 1000);" placeholder="Laissez-nous un message*"
+                    onkeyup="javascript:MaxLengthTextarea(this, 1000);" placeholder="Laissez-nous un message"
                     required></textarea>
                 </div>
             </div>
@@ -160,7 +153,9 @@
         </form>
     </main>
 
-
+     <!-- =============== 
+    Section footer
+    ===============-->
 
     <footer class="footer">
         <div class="lienFooter">
@@ -180,15 +175,11 @@
         </div>
 
         <p>HOTEL PARIMIS PARIS | 1 avenue Montaigne, 75008 Paris | RESERVATION : +33 404404 </p>
-        <p class="legal">@2021 HOTEL PARIMIS PARIS | <a href="#">Mentions-légales</a><a href="#">CGV</a><i
-                class="fas fa-print"></i></p>
-
+        <p class="legal">@2021 HOTEL PARIMIS PARIS | <a href="#">Mentions-légales</a><a href="#">CGV</a><a href="javascript:window.print()"><i
+            class="fas fa-print"></i></a></p>
     </footer>
 
     <script src="/index/nav-footer/menu.js"></script>
-
-
-
     <script>
         function validateEmail(email) { /*fonction js pour vérifier si l'email saisi est valide*/
             var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
@@ -209,15 +200,6 @@
                 alert('Votre texte ne doit pas dépasser ' + maxlength + ' caractères!');
             }
         }
-
-
-
     </script>
-
-
-
-
-
 </body>
-
 </html>
