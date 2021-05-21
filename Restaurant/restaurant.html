@@ -10,15 +10,84 @@
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap" rel="stylesheet">
     <!--choix de notre police d'écriture-->
     <link rel="stylesheet" href="restaurant.css">
+    <link rel="stylesheet" href="../index/nav-footer/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.min.css">
+    
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 
 </head>
 
 <body>
+    <!-- =============== 
+    Section Navbar
+    ===============-->
+    <!-- top -->
 
+    <section class="topBtn">
+        <a href="#header"><i class="fas fa-chevron-up"></i></a>
+    </section>
+    <header id="header">
 
-    <header>
-        <section class="onglets">
+        <div class="logo">
+            <a href="../index/nav-footer/index.html">
+                <h1>HOTEL PARIMIS</h1>
+                <h2>PARIS</h2>
+            </a>
+        </div>
+        <ul class="lienNav">
+            <li><a href="#">CHAMBRES</a></li>
+            <li><a href="#">RESTAURANT</a></li>
+            <li><a href="#">SPA & FITNESS</a></li>
+            <li><a href="#">ACTUALITÉS</a></li>
+            <li><a href="#">ÉVÉNEMENTS</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">RÉSERVATION</a></li>
+        </ul>
+        <div class="autreNav">
+            <div class="lang">
+                <span><a href="#">FR</a></span>
+                <span>|</span>
+                <span><a href="#">EN</a></span>
+            </div>
+            <div class="panier">
+                <a href="#">MON PANIER <i class="fas fa-store-alt"></i></a>
+            </div>
+            <div class="recherche">
+                <input type="search" placeholder="Recherche">
+            </div>
+
+        </div>
+
+        <!-- MENU HAMBURGER -->
+        <i class="fas fa-bars" id="openMenu"></i>
+
+    </header>
+    <!-- DROP MENU -->
+    <section id="menuBurger">
+        <div class="dropMenu">
+            <i class="far fa-times-circle" id="closeMenu"></i>
+
+            <ul class="itemDropMenu">
+                <li><a href="#">CHAMBRES</a></li>
+                <li><a href="#">RESTAURANT</a></li>
+                <li><a href="#">SPA & FITNESS</a></li>
+                <li><a href="#">ACTUALITÉS</a></li>
+                <li><a href="#">ÉVÉNEMENTS</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">RÉSERVATION</a></li>
+            </ul>
+        </div>
+    </section>
+
+    </header>
+
+    <!-- =============== 
+        Section Main
+        ===============-->
+
+    <main>
+
+        <section class="menus-restaurant"
             <hr>
             <ul>
                 <li><a href="#1">Notre carte "Brasserie"</a></li>
@@ -27,43 +96,43 @@
                 <hr>
                 <li><a href="#3">Notre carte "Restaurant"</a></li>
                 <hr>
-                <li><a href="#4">Horaires d'ouvertures</a></li>
+                <li><a href="#4">Horaires du service restaurant</a></li>
             </ul>
             <hr>
         </section>
-    </header>
 
-    <main>
+
+        <section class="carrousel">
 
         <img class="carrouselAuto" src="Carrousel/4.jpg" title="Au Somptueux PARIMIS"
             alt="Carrousel d'images faisant la promotion du restaurant gastronomique PARIMIS">
-
-
-
-        <section class="part1">
-            <h1>Notre restaurant gastronomique: Au Somptueux PARIMIS</h1>
-
-            <p class="p1">Avec son son grand salon intérieur et sa terrasse panoramique donnant sur la fameuse Dame de
-                Fer, ce restaurant gastronomique ravira les papilles
-                des plus gourmets avec son art culinaire orchestré par le très célèbre chef Christian Le Squer,
-                plusieurs fois primé par les étoiles du Guide Michelin. Au Somptueux PARIMIS, c'est une alliance entre
-                goût authentique et traditionnel qui vous invite à savourer les mets français les plus raffinés d'une
-                qualité et d'une fraîcheur sans égal.
-                C'est aussi le lieu privilégié pour célébrer en toute tranquillité vos soirées mondaines entre pairs.
-            </p>
         </section>
 
-        <section id="1" class="container1">
-            <div class="section-img1">
-                <img class="img1" src="img/1.jpg" alt="photo d'une assiette type entrée gastronomique, photo piochée sur pinterest">
+
+
+
+        <section class="container">
+            <section class="text1">
+            <h1>Notre restaurant gastronomique:</h1>
+            <h2>Au Somptueux PARIMIS</h2>
+
+            <p>Avec son son grand salon intérieur et sa terrasse panoramique donnant sur la fameuse Dame de Fer, ce restaurant gastronomique ravira les papilles des plus gourmets avec son art culinaire orchestré par le très célèbre chef Christian Le Squer,plusieurs fois primé par les étoiles du Guide Michelin.</p> <br>
+            <p>Au Somptueux PARIMIS, c'est une alliance entre goût authentique et traditionnel qui vous invite à savourer les mets français les plus raffinés d'une qualité et d'une fraîcheur sans égal.</p>
+            <p>C'est aussi le lieu privilégié pour célébrer en toute tranquillité vos soirées mondaines entre pairs.
+            </p>
+            </section>
+        </section>
+
+
+
+        <section id="1" class="menus-images">
+            <div class="image1">
+                <img class="img1" src="img/1.jpg"
+                    alt="photo d'une assiette type entrée gastronomique, photo piochée sur pinterest">
             </div>
-
-            <div class="pmenu1">
-                <section class="part2">
-                    <h2>Notre carte "Brasserie"</h2>
-
-                    <img class="imgsep" src="Deco_sep/1.png" alt="separateur arabesque">
-
+            <div class="menu1">
+                <h2>Notre carte "Brasserie"</h2>
+                <img class="imgsep" src="Deco_sep/1.png" alt="separateur arabesque">
                     <ul>
                         <li>Médaillon de foie gras et son chutney d'oignons et pistaches</li>
                         <li>*****</li>
@@ -74,19 +143,14 @@
                         <li>Crémeux de betterave rouge accompagné de son homard rôti et de ses pommes vertes</li>
                     </ul>
                     <img class="imgsep" src="Deco_sep/2.png" alt="separateur arabesque">
-                </section>
             </div>
         </section>
 
-
-
-        <section id="2" class="container1">
-            <div class="pmenu2">
-                <section class="part3">
+        
+        <section id="2" class="menus-images">
+            <div class="menu2">
                     <h2>Notre carte "Dégustation"</h2>
-
                     <img class="imgsep" src="Deco_sep/1.png" alt="separateur arabesque">
-
                     <ul>
                         <li>Carpaccio de noix de saint-Jacques et d'homard bleu</li>
                         <li>*****</li>
@@ -97,22 +161,22 @@
                         <li>Velouté de cèpes et châtaignes</li>
                     </ul>
                     <img class="imgsep" src="Deco_sep/2.png" alt="separateur arabesque">
-                </section>
+                
             </div>
 
-            <div class="section-img2">
-                <img class="img2" src="img/2.jpg" alt="photo d'une assiette type entrée gastronomique, photo piochée sur pinterest">
+            <div class="image2">
+                <img class="img2" src="img/2.jpg"
+                    alt="photo d'une assiette type entrée gastronomique, photo piochée sur pinterest">
             </div>
         </section>
 
 
-        <section id="3" class="container1">
-            <div class="section-img3">
+        <section id="3" class="menus-images">
+            <div class="image3">
                 <img class="img3" src="img/3.jpg"
                     alt="photo d'une assiette type plat de résistance gastronomique, photo piochée sur pinterest">
             </div>
-            <div class="pmenu3">
-                <section class="part3">
+            <div class="menu3">
                     <h2>Notre carte "Restaurant"</h2>
                     <img class="imgsep" src="Deco_sep/1.png" alt="separateur arabesque">
                     <ul>
@@ -125,61 +189,85 @@
                         <li>Filets d'agneau en croûte de Truffes et son risotto végétal gourmand</li>
                     </ul>
                     <img class="imgsep" src="Deco_sep/2.png" alt="separateur arabesque">
-                </section>
             </div>
         </section>
 
-        <section id="4" class="container1">
-
-            <div class="aside">
-                <aside>
-                    <h2>Horaires du service</h2>
-                    <ul>
-                        <li>Lundi au Vendredi</li>
-                        <li>12h-16h</li>
-                        <li>En weekend</li>
-                        <li>19h-00:00</li>
-                        <br>
-                    </ul>
-
-                    <ul>
-                        <li>Réservation au:</li>
-                        <li>+33(1) 90 71 31 16</li>
-                    </ul>
-
-                </aside>
-            </div>
+        <section id="4" class="info">
+            <section>
+                <h2 class="info">Horaires du service restaurant</h2>
+                <p>
+                    Lundi au Vendredi <br>
+                    12h-16h <br>
+                    En weekend <br>
+                    19h-00:00 <br>
+                    <br>
+                    Réservation au:<br>
+                    +33 (1) 49 55 30 01 
+                <br>
+                <br>1, avenue Montaigne<br>
+                75008, Paris <br>
+                FRANCE <br>
+                </p>
+                <br>
+                <br>
+                <br>
         </section>
+    </section>
 
 
 
 
     </main>
 
-    <footer>
-        <script>
+    <footer class="footer">
+        <div class="lienFooter">
+            <ul class="itemLienFooter">
+                <li><a href="#">Recrutement</a></li>
+                <li><a href="#">Presse</a></li>
+                <li><a href="#">Avis</a></li>
+                <li><a href="#">Qui sommes-nous ?</a></li>
+                <li><a href="#">Plan du site</a></li>
+                <li><a href="#">Accès</a></li>
+            </ul>
+        </div>
+        <div class="logoPartageFooter">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
 
-            /*Le carrousel d'images faisant la promotion du restaurant gastronomique de l'hôtel PARIMIS*/
-            $('document').ready(function () {
-                img = 4;
-                function slider() {
-                    img += 1;
-                    $('.carrouselAuto').attr("src", "Carrousel/" + img + ".jpg"); // Selection NATURELLE
-                    if (img == 8) {
-                        img = 4;
-
-                    };
-                }
-                var timer = setInterval(slider, 4000);
-
-            })
-
-        </script>
-
-
-
+        <p>HOTEL PARIMIS PARIS | 1 avenue Montaigne, 75008 Paris | RESERVATION : +33 404404 </p>
+        <p class="legal">@2021 HOTEL PARIMIS PARIS | <a href="#">Mentions-légales</a><a href="#">CGV</a><i
+                class="fas fa-print"></i></p>
 
     </footer>
+
+    <script src="/index/nav-footer/menu.js"></script>
+
+
+    <script>
+
+        /*Le carrousel d'images faisant la promotion du restaurant gastronomique de l'hôtel PARIMIS*/
+        $('document').ready(function () {
+            img = 4;
+            function slider() {
+                img += 1;
+                $('.carrouselAuto').attr("src", "Carrousel/" + img + ".jpg"); // Selection NATURELLE
+                if (img == 8) {
+                    img = 4;
+
+                };
+            }
+            var timer = setInterval(slider, 4000);
+
+        })
+
+    </script>
+
+
+
+
+
 </body>
 
 </html>

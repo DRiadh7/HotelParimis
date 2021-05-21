@@ -3,8 +3,50 @@
 Fonts
 ===============
 */
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap');
 
-h1 {
+/*
+=============== 
+Variables
+===============
+*/
+/*  color: var(--clr-primary); */
+:root {
+    --clr-white: #ffffff;
+    --clr-black: #000000;
+    --clr-grey: #e7e7e7;
+    --clr-dropMenu: #030303;
+    --clr-dore: #af936c;
+    --clr-turquoise: #03989e;
+
+}
+/*
+=============== 
+Global css
+===============
+*/
+*{
+    font-family: 'Abhaya Libre', serif;
+}
+/*
+=============== 
+Section ...
+===============
+*/
+main{
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+main a{  
+    text-decoration: none; /*retire l'effet soulignement des liens*/
+    color: inherit; /*retire la couleur bleue des liens*/
+    text-decoration:none;
+}
+
+
+main h1 { /*N'y touche plus*/
     text-align: center;
     line-height: 1.4em;
     font-size: calc(3rem + 0.7vw); /*taille des titres h1, cette propriété permet de fixer une valeur dite responsive*/
@@ -12,51 +54,31 @@ h1 {
     padding-bottom: 3vh;
 }
 
-    h2{
+
+main h2{ /*ok*/
     text-align: center;
-    font-size: calc(1.5rem + 0.7vw); /*taille des titres h2*/
-    font-family: 'Abhaya Libre';
-    
-    }
-
-    p{
-        font-family: 'Abhaya Libre';
-        font-size: calc(0.7rem + 0.7vw); /*taille des paragraphes*/
-        text-align: center;
-        margin: 10 10 10 10;
-    }
-
-
-
-/*=============== 
-Global css
-===============*/
-
-body{
-    font-size: 1.2em;
-    line-height: 1.5em;
-    letter-spacing: 2px;
-    margin: 117px;
-    padding: 40px;
-    box-sizing: border-box;
+    font-size: calc(2rem + 0.7vw); /*taille des titres h2*/
 }
 
-a{
-    text-decoration: none; /*retire l'effet soulignement des liens*/
-    color: inherit; /*retire la couleur bleue des liens*/
-    margin-bottom: 50px;
-    }
 
-/*.onglets{
-    height: 100%;
-    width: 50%;
+main p{ /*N'y touche plus*/
+    font-family: 'Abhaya Libre';
+    font-size: calc(0.6rem + 0.7vw); /*taille des paragraphes*/
+    text-align: center;
+}
+
+
+.menus-restaurant{
+    padding: 0 15%;
+    margin-top: 30px;
+    margin-bottom: 70px;
     justify-content: center;
     text-align:justify; 
-}*/
+}
 
 
 
-.carrouselAuto{
+.carrousel{
     
     display: block;
     max-width: 500px;
@@ -65,122 +87,46 @@ a{
 
 
 
-.container1{
+
+.container{
     display: flex;
-    margin-top: 50px; /*pour gérer l'espace entre les sections*/
-    min-height: 500px;
+}
+
+.text1{
+    display: flex;
     width: 100%;
-    height: auto;
+    justify-content: center;
+    flex-direction: column;
+    padding: 28px 1%;
 }
 
 
-/*.container1{
-
-    width: auto;
-    height: auto;
-    margin-top: 15vh;
+.menus-images{
     display: flex;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    
-}*/
-.pmenu1{ /*Notre carte Brasserie*/
+    padding: 28px 1%;
+}
 
-    height: 100%;
-    width:50%;
+.image1, .image2, .image3{
+    display: flex;
+    width: 40%;
     justify-content: center;
-    text-align:center;
-    position:relative;
-    right: -3%;
-    top: 220%;
+    flex-direction: column;
+    padding: 0 5%;
 }
 
-
-.pmenu2{/*Notre carte Dégustation*/
-
-    height: 100%;
-    width:50%;
+.menu1, .menu2, .menu3{
+    display: flex;
+    width: 60%;
     justify-content: center;
-    text-align:center;
-    position:relative;
-    right: -3%;
-    top: -11%;
+    flex-direction: column;
+    padding: 0 5%;
+
 }
 
-.pmenu3{/*Notre carte Restaurant*/
+main ul li{
 
-    height: 100%;
-    width:50%;
-    justify-content: center;
-    text-align:center;
-    position:relative;
-    right: -3%;
-    top: 220%;
-}
-
-
-
-.part2{
-    line-height: 24px;
-    width:50%;
-    margin-left: auto;
-    margin-right: auto;
-    /*justify-content: center;
-    text-align:justify ;*/
-}
-
-
-
-.part3{
-    line-height: 24px;
-    width:50%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-.p1{
     text-align: center;
-
-    /*padding: 10% 10% 10% 10%;*/
 }
-
-
-
-.section-img1{
-    width: 50%;
-    height: auto;
-    /*position: float;
-    float: left;*/
-}
-
-.section-img2{
-    width: 50%;
-    height: auto;
-    position: float;
-    float: right;
-}
-
-.section-img3{
-
-    width: 50%;
-    height: auto;
-    /*position: float;
-    float: left;*/
-
-}
-
-
-
-.img1, .img2, .img3{
-width: 100%;
-height: auto;
-float: right;
-}
-
-
-
-
 
 .imgsep{/*les arabesques décoratives qui encadrent les menus*/
 
@@ -193,90 +139,52 @@ float: right;
 
 
 
+.info{
 
-/*#4 {
-    display: flex;
-    text-align: right;
-    padding-right: 10px;
+    padding:10%;
 }
 
+/*
+=============== 
+Responsive ...
+===============
+*/
 
-.aside{
-    position: absolute; 
-    left: -25%;
-    width: 40%;
-    padding-left: .5rem;
-    margin-left: .5rem;
-    float: right;
-    box-shadow: inset 5px 0 5px -5px #29627e;
-    font-style: italic;
-    color: #29627e;
+@media screen and (max-width: 576px){
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+        .img1{
+            width: 100%;
+        }
+        main h2{
+            text-align: center;
+        }
+        .carrousel{
 
+            display: none;
+        }
+        .menus-images{
+
+            flex-direction: column;
+            align-items: center;
+        }
 }
 
-
-
-
-
-/*.pmenu{
-    display: flex;
-    width: 60%;
-    justify-content: center;
-    flex-direction: column;
-    padding-left: 10%;
-    padding-right: 5%;
-}*/
-
-
-/****************************RESPONSIVE******************************/
-
-/* On part du réglage mobile first donc smartphone */
-
-
-
-/* smartphone en paysage*/
-@media (min-width: 576px){
-
-
+@media screen and (max-width: 992px){
+	main {
+        display: flex;
+        flex-direction: column;
+    }
     
-}
+    img1  {
+		width: 100%;
+	}
 
 
 
-/* tablettes 
-@media (min-width: 768px){
-    .container{
-        width: 750px;
-        border: 2px solid blue;
-    }
-    .bloc-50{
-        width: 50%;
-    }
-    body{
-        font-size: 1em;
-    }
-}
 
-
-
-/* laptop 
-@media (min-width: 992px){
-    .container{
-        width: 980px;
-        border: 2px solid green;
-    }
-}
-
-
-/* desktop 
-@media (min-width: 1200px){
-    .container{
-        width: 1180px;
-        border: 2px solid gold;
-    }
-    body{
-        font-size: 1.5em;
-    }
-}*/
 
 
