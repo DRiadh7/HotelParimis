@@ -274,4 +274,8 @@ Responsive ...
     .bouton-reserver {
         font-size: calc(1rem + 0.7vw);
     }
+
+    .equipement{
+        height: 20vh;
+    }
 }
