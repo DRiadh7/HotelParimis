@@ -4,11 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/reset.css">
-    <link rel="stylesheet" href="/Acces/acces.css">
+    <title>Accès à notre hôtel 5 étoiles à Paris | Parimis Hôtel</title>
+    <meta name="description" content="Toutes les informations nécessaires pour votre venue à l'hôtel, accessible facilement en voiture et transports en commun">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="acces.css">
+    <link rel="stylesheet" href="../index/nav-footer/style.css">
+    <link rel="shortcut icon" href="../index/img/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.min.css">
 </head>
+
 <body>
+
+<!-- =============== 
+    Section Navbar
+    ===============-->
+    <!-- top -->
+    <section class="topBtn">
+        <a href="#header"><i class="fas fa-chevron-up"></i></a>
+    </section>
+    <header id="header">
+        
+        <div class="logo">
+            <a href="../index/nav-footer/index.html">
+                <h1>HOTEL PARIMIS</h1>
+                <h2>PARIS</h2>
+            </a>
+        </div>
+        <ul class="lienNav">
+            <li><a href="../Chambre/Catégorie/chambres.html">CHAMBRES</a></li>
+            <li><a href="../Restaurant/restaurant.html">RESTAURANT</a></li>
+            <li><a href="../Spa/spa.html">SPA & FITNESS</a></li>
+            <li><a href="../Actualite/actualite.html">ACTUALITÉS</a></li>
+            <li><a href="../Evenement/evenement.html">ÉVÉNEMENTS</a></li>
+            <li><a href="../Contact/contacts.html">CONTACT</a></li>
+            <li><a href="../Reservation/reservation.html">RÉSERVATION</a></li>
+        </ul>
+        <div class="autreNav">
+            <div class="lang">
+                <span><a href="#">FR</a></span>
+                <span>|</span>
+                <span><a href="#">EN</a></span>
+            </div>
+            <div class="panier">
+                <a href="../Panier/panier.html">MON PANIER <i class="fas fa-store-alt"></i></a>
+            </div>
+            <div class="recherche">
+                <input type="search" placeholder="Recherche">
+            </div>
+    
+        </div>
+
+        <!-- MENU HUMBERGER -->
+        <i class="fas fa-bars" id="openMenu"></i>
+       
+    </header>
+    <!-- DROP MENU -->
+    <section id="menuBurger">
+         <div class="dropMenu">
+            <i class="far fa-times-circle" id="closeMenu"></i>
+
+            <ul class="itemDropMenu">
+                <li><a href="../Chambre/Catégorie/chambres.html">CHAMBRES</a></li>
+                <li><a href="../Restaurant/restaurant.html">RESTAURANT</a></li>
+                <li><a href="../Spa/spa.html">SPA & FITNESS</a></li>
+                <li><a href="../Actualite/actualite.html">ACTUALITÉS</a></li>
+                <li><a href="../Evenement/evenement.html">ÉVÉNEMENTS</a></li>
+                <li><a href="../Contact/contacts.html">CONTACT</a></li>
+                <li><a href="../Reservation/reservation.html">RÉSERVATION</a></li>
+            </ul> 
+        </div>
+    </section>
+
     <main>
         <div class="acces">
             <div class="carteAcces">
@@ -22,11 +88,40 @@
                 </div>
                 <div class="iconTransport">
                     <h3>Transports en communs</h3>
-                    <span><img src="/Acces/imgAcces/metro.png" alt=""><img src="/Acces/imgAcces/metro9.png" alt="">Alma-Marceau</span>
-                    <span><img src="/Acces/imgAcces/rer.png" alt=""><img src="/Acces/imgAcces/rer-c.png" alt="">Pont de l'Alma</span>
+                    <span><img src="imgAcces/metro.png" alt=""><img src="imgAcces/metro9.png" alt="">Alma-Marceau</span>
+                    <span><img src="imgAcces/rer.png" alt=""><img src="imgAcces/rer-c.png" alt="">Pont de l'Alma</span>
                 </div>
             </div>
         </div>
     </main>
+
+<!-- =============== 
+        Section Footer
+        ===============-->
+
+    <footer class="footer">
+        <div class="lienFooter">
+            <ul class="itemLienFooter">
+                <li><a href="../Recrutement/recrutement.html">Recrutement</a></li> 
+                <li><a href="../Press/press.html">Presse</a></li>
+                <li><a href="../Avis/avis.html">Avis</a></li>
+                <li><a href="../Presentation/presentation.html">Qui somme-nous ?</a></li>
+                <li><a href="../PlanSite/plansite.html">Plan du site</a></li>
+                <li><a href="../Acces/acces.html">Accès</a></li>
+            </ul>
+        </div>
+        <div class="logoPartageFooter">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    
+        <p>HOTEL PARIMIS PARIS | 1 avenue Montaigne, 75008 Paris | RESERVATION : +33 404404 </p>
+        <p class="legal">@2021 HOTEL PARIMIS PARIS | <a href="../Mentions légales/mentions-legales.html">Mention-légal</a> <a href="../CGV/cgv.html"> CGV</a><i class="fas fa-print"></i></p>
+    
+    </footer>
+
+    
+    <script src="../index/nav-footer/menu.js"></script>
 </body>
 </html>

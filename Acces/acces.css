@@ -29,6 +29,12 @@ Global css
 *{
     font-family: 'Abhaya Libre', serif;
 }
+
+main{
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+}
+
 /*
 =============== 
 Section acces
@@ -78,6 +84,11 @@ Section acces
     margin: 1rem 0;
 }
 @media screen and (max-width : 768px) {
+    
+    main{
+        height: 80vh;
+    }
+
     .acces {
         flex-direction: column;
     }
