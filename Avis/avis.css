@@ -108,7 +108,18 @@ Section Avis
     font-style: italic;
     font-variant: small-caps;
 }
-
+.lienAvisPrecedent {
+    display: flex;
+    
+}
+.lienAvisPrecedent a {
+    margin-left: 1rem;
+    border-bottom: 1px solid var(--clr-black);
+}
+.lienAvisPrecedent a:hover {
+    color: #af936c;
+}
+/* Média */
 @media screen and (max-width : 768px) {
     .avis {
         flex-direction: column;

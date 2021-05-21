@@ -147,7 +147,7 @@ main h2{
     width: 350px;
     height: 100%;
     border-bottom: ridge 30px #03989e;
-    border-right: groove 30px #03989e;
+    border-right: ridge 30px #03989e;
 }
 
 
