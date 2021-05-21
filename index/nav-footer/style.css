@@ -113,10 +113,17 @@ header {
     border-bottom: 2px solid var(--clr-black);
     transition: 0.1s;
 }
-.lienReservation {
+
+.lienNav li:nth-child(7){
     background-color: #af936c77;
     padding: 0.5rem;
 }
+
+.itemDropMenu li:nth-child(7){
+    background-color: #af936c77;
+    padding: 0.5rem;
+}
+
 .autreNav {
     display: flex;
     flex-direction: column;
