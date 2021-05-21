@@ -67,6 +67,7 @@ Section Main
 .formReservation input{
     padding: 0.5rem;
     border: none;
+    border-radius: 9999px;
 }
 .formReservation label{
     margin-bottom: 0.5rem;
