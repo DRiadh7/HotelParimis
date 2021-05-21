@@ -2,4 +2,4 @@ User-agent:*
 Disallow:/Panier/
 Disallow:/Reservation/
 
-sitemap: https://parimis-hotel.fr/sitemap.xml
+sitemap: ma-devweb.alwaysdata.net/sitemap.xml
